@@ -1,0 +1,9 @@
+if game.JobId == 4913708314 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NemsploitsTM/test/main/BTF"))()
+elseif game.JobId == 6679701700 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NemsploitsTM/test/main/BTF"))()
+elseif game.JobId == 6679701700 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NemsploitsTM/test/main/BTF"))()
+elseif game.JobId == 6679701700 then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/NemsploitsTM/test/main/BTF"))()
+end
