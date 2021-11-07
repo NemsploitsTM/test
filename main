@@ -89,7 +89,7 @@ Wellcome.TextWrapped = true
 
 -- Scripts:
 
-local function GNUSYV_fake_script() -- TextButton.Rainbower 
+local function LGEWQ_fake_script() -- TextButton.Rainbower 
 	local script = Instance.new('LocalScript', TextButton)
 
 	while wait() do
@@ -120,8 +120,8 @@ local function GNUSYV_fake_script() -- TextButton.Rainbower
 		end
 	end
 end
-coroutine.wrap(GNUSYV_fake_script)()
-local function XSAEZ_fake_script() -- TextButton.Rainbower 
+coroutine.wrap(LGEWQ_fake_script)()
+local function ANSOSR_fake_script() -- TextButton.Rainbower 
 	local script = Instance.new('LocalScript', TextButton)
 
 	while wait() do
@@ -152,40 +152,43 @@ local function XSAEZ_fake_script() -- TextButton.Rainbower
 		end
 	end
 end
-coroutine.wrap(XSAEZ_fake_script)()
-local function XYSXTR_fake_script() -- TextButton.Script 
+coroutine.wrap(ANSOSR_fake_script)()
+local function JBKKEYG_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
-	if game.JobId == 4913708314 then
+	if game.PlaceId == 4913708314 then
 		script.Parent.Text = "BTF Turkish Armed Forces"
-	elseif game.JobId == 6679701700 then
+	elseif game.PlaceId == 6679701700 then
 		script.Parent.Text = "TAF Turkish Armed Forces"
-	elseif game.JobId == 662417684 then
+	elseif game.PlaceId == 662417684 then
 		script.Parent.Text = "LUCKY BLOCKS Battlegrounds"
+	else
+		script.Parent.Text = "Close"
+		script.Parent.Parent.detected.Text = "No game detected."
 	end
 	
 	script.Parent.MouseButton1Click:Connect(function()
-		if game.JobId == 4913708314 then
+		if game.PlaceId == 4913708314 then
 			loadstring(game:HttpGet('https://raw.githubusercontent.com/NemsploitsTM/test/main/BTF', true))()
-		elseif game.JobId == 6679701700 then
+		elseif game.PlaceId == 6679701700 then
 			print("soon")
-		elseif game.JobId == 662417684 then
+		elseif game.PlaceId == 662417684 then
 			loadstring(game:HttpGet('https://raw.githubusercontent.com/NemsploitsTM/test/main/Lucky%20Block', true))()
 		else
 			script.Parent.Parent.Parent:Destroy()
 		end
 	end)
 end
-coroutine.wrap(XYSXTR_fake_script)()
-local function ATAIM_fake_script() -- Wellcome.LocalScript 
+coroutine.wrap(JBKKEYG_fake_script)()
+local function BTYXGXR_fake_script() -- Wellcome.LocalScript 
 	local script = Instance.new('LocalScript', Wellcome)
 
 	local Player = game:GetService("Players").LocalPlayer.Name
 	
 	script.Parent.Text = "Wellcome "..Player.."!"
 end
-coroutine.wrap(ATAIM_fake_script)()
-local function LUZTN_fake_script() -- Frame.LocalScript 
+coroutine.wrap(BTYXGXR_fake_script)()
+local function QXLU_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local Frame = script.Parent
@@ -303,4 +306,4 @@ local function LUZTN_fake_script() -- Frame.LocalScript
 	wait(taym)
 	CurrentGame.TextTransparency = 0
 end
-coroutine.wrap(LUZTN_fake_script)()
+coroutine.wrap(QXLU_fake_script)()
