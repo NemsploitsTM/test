@@ -1,94 +1,56 @@
-local Thumbnail = Instance.new("ScreenGui")
+local BTF = Instance.new("ScreenGui")
 local Pages = Instance.new("Frame")
-local Name = Instance.new("Frame")
+local Main = Instance.new("Frame")
 local Hub = Instance.new("Frame")
 local UIGridLayout = Instance.new("UIGridLayout")
+local HideName = Instance.new("TextButton")
 local UIPadding = Instance.new("UIPadding")
-local Button = Instance.new("TextButton")
-local CheckBox = Instance.new("TextButton")
-local Checked = Instance.new("ImageLabel")
-local UIAspectRatioConstraint = Instance.new("UIAspectRatioConstraint")
-local Checkbox = Instance.new("ImageLabel")
-local UIAspectRatioConstraint_2 = Instance.new("UIAspectRatioConstraint")
-local CheckBox2 = Instance.new("TextButton")
-local Checkbox_2 = Instance.new("ImageLabel")
-local UIAspectRatioConstraint_3 = Instance.new("UIAspectRatioConstraint")
-local Checked_2 = Instance.new("ImageLabel")
-local UIAspectRatioConstraint_4 = Instance.new("UIAspectRatioConstraint")
-local Name_2 = Instance.new("TextLabel")
-local TextBox = Instance.new("TextBox")
-local ButtonList = Instance.new("TextButton")
-local OpenClose = Instance.new("TextLabel")
-local Hub_2 = Instance.new("Frame")
-local Name_3 = Instance.new("TextButton")
-local Name_4 = Instance.new("TextButton")
-local Name_5 = Instance.new("TextButton")
-local Name_6 = Instance.new("TextButton")
-local Name_7 = Instance.new("TextButton")
-local UIGridLayout_2 = Instance.new("UIGridLayout")
-local UIPadding_2 = Instance.new("UIPadding")
-local TextLabel = Instance.new("TextLabel")
-local ButtonList2 = Instance.new("TextButton")
-local OpenClose_2 = Instance.new("TextLabel")
-local Hub_3 = Instance.new("Frame")
-local Scroll = Instance.new("ScrollingFrame")
-local UIGridLayout_3 = Instance.new("UIGridLayout")
-local UIPadding_3 = Instance.new("UIPadding")
-local Name_8 = Instance.new("TextButton")
-local Name_9 = Instance.new("TextButton")
-local Name_10 = Instance.new("TextButton")
-local Name_11 = Instance.new("TextButton")
-local Name_12 = Instance.new("TextButton")
-local Name_13 = Instance.new("TextButton")
-local Name_14 = Instance.new("TextButton")
-local Name_15 = Instance.new("TextButton")
-local Name_16 = Instance.new("TextButton")
-local Name_17 = Instance.new("TextButton")
-local Name_18 = Instance.new("TextButton")
+local MIT = Instance.new("TextButton")
+local Spawn = Instance.new("TextButton")
 local Rainbow = Instance.new("Frame")
-local Name_19 = Instance.new("TextLabel")
+local Name = Instance.new("TextLabel")
 local CloseOpen = Instance.new("TextButton")
-local Credits = Instance.new("Frame")
-local Hub_4 = Instance.new("Frame")
-local UIGridLayout_4 = Instance.new("UIGridLayout")
-local UIPadding_4 = Instance.new("UIPadding")
-local ADiscord = Instance.new("TextButton")
-local GuiBy = Instance.new("TextLabel")
-local DesignBy = Instance.new("TextLabel")
-local ScriptBy = Instance.new("TextLabel")
-local Rainbow_2 = Instance.new("Frame")
-local Name_20 = Instance.new("TextLabel")
-local CloseOpen_2 = Instance.new("TextButton")
-local info = Instance.new("TextLabel")
 
 --Properties:
 
-Thumbnail.Name = "Thumbnail"
-Thumbnail.Parent = game.ServerStorage
-Thumbnail.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+BTF.Name = "BTF"
+BTF.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+BTF.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+BTF.ResetOnSpawn = false
 
 Pages.Name = "Pages"
-Pages.Parent = Thumbnail
+Pages.Parent = BTF
 Pages.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Pages.BackgroundTransparency = 1.000
 Pages.Size = UDim2.new(0, 100, 0, 100)
 Pages.ZIndex = 1000000000
 
-Name.Name = "Name"
-Name.Parent = Pages
-Name.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Name.Position = UDim2.new(0.700000167, 0, 0.389999866, 0)
-Name.Size = UDim2.new(0, 195, 0, 30)
+Main.Name = "Main"
+Main.Parent = Pages
+Main.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Main.Position = UDim2.new(0.700000167, 0, 0.389999866, 0)
+Main.Size = UDim2.new(0, 195, 0, 30)
 
 Hub.Name = "Hub"
-Hub.Parent = Name
+Hub.Parent = Main
 Hub.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Hub.Position = UDim2.new(0, 0, 1.06666672, 0)
-Hub.Size = UDim2.new(0, 195, 0, 372)
+Hub.Position = UDim2.new(0, 0, 1.0666672, 0)
+Hub.Size = UDim2.new(0, 195, 0, 94)
 
 UIGridLayout.Parent = Hub
 UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
 UIGridLayout.CellSize = UDim2.new(0, 180, 0, 25)
+
+HideName.Name = "HideName"
+HideName.Parent = Hub
+HideName.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+HideName.BorderColor3 = Color3.fromRGB(0, 0, 0)
+HideName.Position = UDim2.new(-0.550256431, 0, 1.0558728, 0)
+HideName.Size = UDim2.new(0, 200, 0, 50)
+HideName.Font = Enum.Font.SourceSansSemibold
+HideName.Text = "Hide Name"
+HideName.TextColor3 = Color3.fromRGB(255, 255, 255)
+HideName.TextSize = 17.000
 
 UIPadding.Parent = Hub
 UIPadding.PaddingBottom = UDim.new(0, 5)
@@ -96,415 +58,50 @@ UIPadding.PaddingLeft = UDim.new(0, 5)
 UIPadding.PaddingRight = UDim.new(0, 5)
 UIPadding.PaddingTop = UDim.new(0, 5)
 
-Button.Name = "Button"
-Button.Parent = Hub
-Button.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Button.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Button.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
-Button.Size = UDim2.new(0, 200, 0, 50)
-Button.Font = Enum.Font.SourceSansSemibold
-Button.Text = "Hide Name"
-Button.TextColor3 = Color3.fromRGB(255, 255, 255)
-Button.TextSize = 17.000
+MIT.Name = "MIT"
+MIT.Parent = Hub
+MIT.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+MIT.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MIT.Position = UDim2.new(-0.550256431, 0, 1.0558728, 0)
+MIT.Size = UDim2.new(0, 200, 0, 50)
+MIT.Font = Enum.Font.SourceSansSemibold
+MIT.Text = "TP to MIT Base"
+MIT.TextColor3 = Color3.fromRGB(255, 255, 255)
+MIT.TextSize = 17.000
 
-CheckBox.Name = "CheckBox"
-CheckBox.Parent = Hub
-CheckBox.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-CheckBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
-CheckBox.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
-CheckBox.Size = UDim2.new(0, 200, 0, 50)
-CheckBox.Font = Enum.Font.SourceSansSemibold
-CheckBox.Text = "CheckBox"
-CheckBox.TextColor3 = Color3.fromRGB(255, 255, 255)
-CheckBox.TextSize = 17.000
-
-Checked.Name = "Checked"
-Checked.Parent = CheckBox
-Checked.AnchorPoint = Vector2.new(0, 0.5)
-Checked.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Checked.BackgroundTransparency = 1.000
-Checked.Position = UDim2.new(0, 3, 0.517499983, 0)
-Checked.Size = UDim2.new(0, 20, 0, 20)
-Checked.Visible = false
-Checked.ZIndex = 3
-Checked.Image = "rbxassetid://5208296441"
-Checked.ImageColor3 = Color3.fromRGB(46, 255, 0)
-
-UIAspectRatioConstraint.Parent = Checked
-
-Checkbox.Name = "Checkbox"
-Checkbox.Parent = CheckBox
-Checkbox.AnchorPoint = Vector2.new(0, 0.5)
-Checkbox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Checkbox.BackgroundTransparency = 1.000
-Checkbox.Position = UDim2.new(0, 3, 0.517499983, 0)
-Checkbox.Size = UDim2.new(0, 20, 0, 20)
-Checkbox.ZIndex = 2
-Checkbox.Image = "rbxassetid://55031729"
-
-UIAspectRatioConstraint_2.Parent = Checkbox
-
-CheckBox2.Name = "CheckBox2"
-CheckBox2.Parent = Hub
-CheckBox2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-CheckBox2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-CheckBox2.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
-CheckBox2.Size = UDim2.new(0, 200, 0, 50)
-CheckBox2.Font = Enum.Font.SourceSansSemibold
-CheckBox2.Text = " "
-CheckBox2.TextColor3 = Color3.fromRGB(255, 255, 255)
-CheckBox2.TextSize = 14.000
-
-Checkbox_2.Name = "Checkbox"
-Checkbox_2.Parent = CheckBox2
-Checkbox_2.AnchorPoint = Vector2.new(0, 0.5)
-Checkbox_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Checkbox_2.BackgroundTransparency = 1.000
-Checkbox_2.Position = UDim2.new(0, 3, 0.517499983, 0)
-Checkbox_2.Size = UDim2.new(0, 20, 0, 20)
-Checkbox_2.ZIndex = 2
-Checkbox_2.Image = "rbxassetid://55031729"
-
-UIAspectRatioConstraint_3.Parent = Checkbox_2
-
-Checked_2.Name = "Checked"
-Checked_2.Parent = CheckBox2
-Checked_2.AnchorPoint = Vector2.new(0, 0.5)
-Checked_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Checked_2.BackgroundTransparency = 1.000
-Checked_2.Position = UDim2.new(0, 3, 0.517499983, 0)
-Checked_2.Size = UDim2.new(0, 20, 0, 20)
-Checked_2.Visible = false
-Checked_2.ZIndex = 2
-Checked_2.Image = "rbxassetid://5208296441"
-Checked_2.ImageColor3 = Color3.fromRGB(46, 255, 0)
-
-UIAspectRatioConstraint_4.Parent = Checked_2
-
-Name_2.Name = "Name"
-Name_2.Parent = CheckBox2
-Name_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Name_2.BackgroundTransparency = 1.000
-Name_2.Position = UDim2.new(0.163328037, 0, 0, 0)
-Name_2.Size = UDim2.new(0, 150, 0, 25)
-Name_2.Font = Enum.Font.SourceSansSemibold
-Name_2.Text = "CheckBox2"
-Name_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_2.TextSize = 17.000
-
-TextBox.Parent = Hub
-TextBox.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextBox.Size = UDim2.new(0, 200, 0, 50)
-TextBox.ClearTextOnFocus = false
-TextBox.Font = Enum.Font.SourceSans
-TextBox.PlaceholderText = "TextBox"
-TextBox.Text = ""
-TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextBox.TextSize = 17.000
-TextBox.TextWrapped = true
-
-ButtonList.Name = "ButtonList"
-ButtonList.Parent = Hub
-ButtonList.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ButtonList.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ButtonList.Position = UDim2.new(1.69589746, 0, -0.00786516443, 0)
-ButtonList.Size = UDim2.new(0, 200, 0, 50)
-ButtonList.Font = Enum.Font.SourceSansSemibold
-ButtonList.Text = "TP Lists"
-ButtonList.TextColor3 = Color3.fromRGB(255, 255, 255)
-ButtonList.TextSize = 17.000
-
-OpenClose.Name = "Open/Close"
-OpenClose.Parent = ButtonList
-OpenClose.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-OpenClose.BackgroundTransparency = 1.000
-OpenClose.Position = UDim2.new(0.855108678, 0, 0, 0)
-OpenClose.Size = UDim2.new(0, 25, 0, 25)
-OpenClose.Font = Enum.Font.SourceSansBold
-OpenClose.Text = "+"
-OpenClose.TextColor3 = Color3.fromRGB(255, 255, 255)
-OpenClose.TextSize = 17.000
-OpenClose.TextWrapped = true
-
-Hub_2.Name = "Hub"
-Hub_2.Parent = ButtonList
-Hub_2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Hub_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Hub_2.Position = UDim2.new(0, 0, 1, 0)
-Hub_2.Size = UDim2.new(0, 180, 0, 156)
-Hub_2.Visible = false
-Hub_2.ZIndex = 1000000000
-
-Name_3.Name = "Name"
-Name_3.Parent = Hub_2
-Name_3.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Name_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Name_3.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
-Name_3.Size = UDim2.new(0, 200, 0, 50)
-Name_3.Font = Enum.Font.SourceSansSemibold
-Name_3.Text = "Name"
-Name_3.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_3.TextSize = 14.000
-
-Name_4.Name = "Name"
-Name_4.Parent = Hub_2
-Name_4.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Name_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Name_4.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
-Name_4.Size = UDim2.new(0, 200, 0, 50)
-Name_4.Font = Enum.Font.SourceSansSemibold
-Name_4.Text = "Name"
-Name_4.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_4.TextSize = 14.000
-
-Name_5.Name = "Name"
-Name_5.Parent = Hub_2
-Name_5.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Name_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Name_5.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
-Name_5.Size = UDim2.new(0, 200, 0, 50)
-Name_5.Font = Enum.Font.SourceSansSemibold
-Name_5.Text = "Name"
-Name_5.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_5.TextSize = 14.000
-
-Name_6.Name = "Name"
-Name_6.Parent = Hub_2
-Name_6.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Name_6.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Name_6.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
-Name_6.Size = UDim2.new(0, 200, 0, 50)
-Name_6.Font = Enum.Font.SourceSansSemibold
-Name_6.Text = "Name"
-Name_6.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_6.TextSize = 14.000
-
-Name_7.Name = "Name"
-Name_7.Parent = Hub_2
-Name_7.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Name_7.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Name_7.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
-Name_7.Size = UDim2.new(0, 200, 0, 50)
-Name_7.Font = Enum.Font.SourceSansSemibold
-Name_7.Text = "Name"
-Name_7.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_7.TextSize = 14.000
-
-UIGridLayout_2.Parent = Hub_2
-UIGridLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
-UIGridLayout_2.CellSize = UDim2.new(0, 170, 0, 25)
-
-UIPadding_2.Parent = Hub_2
-UIPadding_2.PaddingBottom = UDim.new(0, 5)
-UIPadding_2.PaddingLeft = UDim.new(0, 5)
-UIPadding_2.PaddingRight = UDim.new(0, 5)
-UIPadding_2.PaddingTop = UDim.new(0, 5)
-
-TextLabel.Parent = Hub
-TextLabel.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TextLabel.Size = UDim2.new(0, 200, 0, 50)
-TextLabel.Font = Enum.Font.SourceSansSemibold
-TextLabel.Text = "TextLabel"
-TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextLabel.TextSize = 17.000
-
-ButtonList2.Name = "ButtonList2"
-ButtonList2.Parent = Hub
-ButtonList2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ButtonList2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ButtonList2.Position = UDim2.new(1.69589746, 0, -0.00786516443, 0)
-ButtonList2.Size = UDim2.new(0, 200, 0, 50)
-ButtonList2.Font = Enum.Font.SourceSansSemibold
-ButtonList2.Text = "ButtonList2"
-ButtonList2.TextColor3 = Color3.fromRGB(255, 255, 255)
-ButtonList2.TextSize = 17.000
-
-OpenClose_2.Name = "Open/Close"
-OpenClose_2.Parent = ButtonList2
-OpenClose_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-OpenClose_2.BackgroundTransparency = 1.000
-OpenClose_2.Position = UDim2.new(0.855108678, 0, 0, 0)
-OpenClose_2.Size = UDim2.new(0, 25, 0, 25)
-OpenClose_2.Font = Enum.Font.SourceSansBold
-OpenClose_2.Text = "+"
-OpenClose_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-OpenClose_2.TextSize = 17.000
-OpenClose_2.TextWrapped = true
-
-Hub_3.Name = "Hub"
-Hub_3.Parent = ButtonList2
-Hub_3.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Hub_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Hub_3.Position = UDim2.new(0, 0, 1, 0)
-Hub_3.Size = UDim2.new(0, 180, 0, 156)
-Hub_3.Visible = false
-Hub_3.ZIndex = 1000000000
-
-Scroll.Name = "Scroll"
-Scroll.Parent = Hub_3
-Scroll.Active = true
-Scroll.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Scroll.BackgroundTransparency = 1.000
-Scroll.BorderSizePixel = 0
-Scroll.Size = UDim2.new(0, 180, 0, 156)
-Scroll.CanvasSize = UDim2.new(0, 0, 5, 0)
-Scroll.ScrollBarThickness = 3
-
-UIGridLayout_3.Parent = Scroll
-UIGridLayout_3.HorizontalAlignment = Enum.HorizontalAlignment.Center
-UIGridLayout_3.CellSize = UDim2.new(0, 170, 0, 25)
-
-UIPadding_3.Parent = Scroll
-UIPadding_3.PaddingBottom = UDim.new(0, 5)
-UIPadding_3.PaddingLeft = UDim.new(0, 5)
-UIPadding_3.PaddingRight = UDim.new(0, 5)
-UIPadding_3.PaddingTop = UDim.new(0, 5)
-
-Name_8.Name = "Name"
-Name_8.Parent = Scroll
-Name_8.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Name_8.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Name_8.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
-Name_8.Size = UDim2.new(0, 200, 0, 50)
-Name_8.Font = Enum.Font.SourceSansSemibold
-Name_8.Text = "Name"
-Name_8.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_8.TextSize = 14.000
-
-Name_9.Name = "Name"
-Name_9.Parent = Scroll
-Name_9.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Name_9.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Name_9.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
-Name_9.Size = UDim2.new(0, 200, 0, 50)
-Name_9.Font = Enum.Font.SourceSansSemibold
-Name_9.Text = "Name"
-Name_9.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_9.TextSize = 14.000
-
-Name_10.Name = "Name"
-Name_10.Parent = Scroll
-Name_10.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Name_10.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Name_10.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
-Name_10.Size = UDim2.new(0, 200, 0, 50)
-Name_10.Font = Enum.Font.SourceSansSemibold
-Name_10.Text = "Name"
-Name_10.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_10.TextSize = 14.000
-
-Name_11.Name = "Name"
-Name_11.Parent = Scroll
-Name_11.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Name_11.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Name_11.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
-Name_11.Size = UDim2.new(0, 200, 0, 50)
-Name_11.Font = Enum.Font.SourceSansSemibold
-Name_11.Text = "Name"
-Name_11.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_11.TextSize = 14.000
-
-Name_12.Name = "Name"
-Name_12.Parent = Scroll
-Name_12.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Name_12.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Name_12.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
-Name_12.Size = UDim2.new(0, 200, 0, 50)
-Name_12.Font = Enum.Font.SourceSansSemibold
-Name_12.Text = "Name"
-Name_12.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_12.TextSize = 14.000
-
-Name_13.Name = "Name"
-Name_13.Parent = Scroll
-Name_13.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Name_13.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Name_13.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
-Name_13.Size = UDim2.new(0, 200, 0, 50)
-Name_13.Font = Enum.Font.SourceSansSemibold
-Name_13.Text = "Name"
-Name_13.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_13.TextSize = 14.000
-
-Name_14.Name = "Name"
-Name_14.Parent = Scroll
-Name_14.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Name_14.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Name_14.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
-Name_14.Size = UDim2.new(0, 200, 0, 50)
-Name_14.Font = Enum.Font.SourceSansSemibold
-Name_14.Text = "Name"
-Name_14.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_14.TextSize = 14.000
-
-Name_15.Name = "Name"
-Name_15.Parent = Scroll
-Name_15.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Name_15.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Name_15.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
-Name_15.Size = UDim2.new(0, 200, 0, 50)
-Name_15.Font = Enum.Font.SourceSansSemibold
-Name_15.Text = "Name"
-Name_15.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_15.TextSize = 14.000
-
-Name_16.Name = "Name"
-Name_16.Parent = Scroll
-Name_16.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Name_16.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Name_16.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
-Name_16.Size = UDim2.new(0, 200, 0, 50)
-Name_16.Font = Enum.Font.SourceSansSemibold
-Name_16.Text = "Name"
-Name_16.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_16.TextSize = 14.000
-
-Name_17.Name = "Name"
-Name_17.Parent = Scroll
-Name_17.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Name_17.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Name_17.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
-Name_17.Size = UDim2.new(0, 200, 0, 50)
-Name_17.Font = Enum.Font.SourceSansSemibold
-Name_17.Text = "Name"
-Name_17.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_17.TextSize = 14.000
-
-Name_18.Name = "Name"
-Name_18.Parent = Scroll
-Name_18.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Name_18.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Name_18.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
-Name_18.Size = UDim2.new(0, 200, 0, 50)
-Name_18.Font = Enum.Font.SourceSansSemibold
-Name_18.Text = "Name"
-Name_18.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_18.TextSize = 14.000
+Spawn.Name = "Spawn"
+Spawn.Parent = Hub
+Spawn.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Spawn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Spawn.Position = UDim2.new(-0.550256431, 0, 1.0558728, 0)
+Spawn.Size = UDim2.new(0, 200, 0, 50)
+Spawn.Font = Enum.Font.SourceSansSemibold
+Spawn.Text = "TP to Spawn"
+Spawn.TextColor3 = Color3.fromRGB(255, 255, 255)
+Spawn.TextSize = 17.000
 
 Rainbow.Name = "Rainbow"
-Rainbow.Parent = Name
+Rainbow.Parent = Main
 Rainbow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Rainbow.BorderSizePixel = 0
 Rainbow.Position = UDim2.new(0, 0, 1, 0)
 Rainbow.Size = UDim2.new(0, 195, 0, 2)
 
-Name_19.Name = "Name"
-Name_19.Parent = Name
-Name_19.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Name_19.BackgroundTransparency = 1.000
-Name_19.Position = UDim2.new(0.189225882, 0, 0, 0)
-Name_19.Size = UDim2.new(0, 120, 0, 30)
-Name_19.Font = Enum.Font.SourceSansSemibold
-Name_19.Text = "BTF FUCKER"
-Name_19.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_19.TextScaled = true
-Name_19.TextSize = 14.000
-Name_19.TextWrapped = true
+Name.Name = "Name"
+Name.Parent = Main
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name.BackgroundTransparency = 1.000
+Name.Position = UDim2.new(0.189225882, 0, 0, 0)
+Name.Size = UDim2.new(0, 120, 0, 30)
+Name.Font = Enum.Font.SourceSansSemibold
+Name.Text = "BTF GUI"
+Name.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name.TextScaled = true
+Name.TextSize = 14.000
+Name.TextWrapped = true
 
 CloseOpen.Name = "Close/Open"
-CloseOpen.Parent = Name
+CloseOpen.Parent = Main
 CloseOpen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 CloseOpen.BackgroundTransparency = 1.000
 CloseOpen.Position = UDim2.new(0.843177199, 0, 0, 0)
@@ -516,119 +113,9 @@ CloseOpen.TextScaled = true
 CloseOpen.TextSize = 14.000
 CloseOpen.TextWrapped = true
 
-Credits.Name = "Credits"
-Credits.Parent = Pages
-Credits.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Credits.Position = UDim2.new(2.94000006, 0, 0.379999995, 0)
-Credits.Size = UDim2.new(0, 195, 0, 30)
-
-Hub_4.Name = "Hub"
-Hub_4.Parent = Credits
-Hub_4.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Hub_4.Position = UDim2.new(0, 0, 1.06666672, 0)
-Hub_4.Size = UDim2.new(0, 195, 0, 175)
-
-UIGridLayout_4.Parent = Hub_4
-UIGridLayout_4.HorizontalAlignment = Enum.HorizontalAlignment.Center
-UIGridLayout_4.CellSize = UDim2.new(0, 180, 0, 25)
-
-UIPadding_4.Parent = Hub_4
-UIPadding_4.PaddingBottom = UDim.new(0, 5)
-UIPadding_4.PaddingLeft = UDim.new(0, 5)
-UIPadding_4.PaddingRight = UDim.new(0, 5)
-UIPadding_4.PaddingTop = UDim.new(0, 5)
-
-ADiscord.Name = "ADiscord"
-ADiscord.Parent = Hub_4
-ADiscord.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ADiscord.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ADiscord.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
-ADiscord.Size = UDim2.new(0, 200, 0, 50)
-ADiscord.Font = Enum.Font.SourceSansSemibold
-ADiscord.Text = "Copy Discord"
-ADiscord.TextColor3 = Color3.fromRGB(255, 255, 255)
-ADiscord.TextSize = 17.000
-
-GuiBy.Name = "GuiBy"
-GuiBy.Parent = Hub_4
-GuiBy.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-GuiBy.BorderColor3 = Color3.fromRGB(0, 0, 0)
-GuiBy.Size = UDim2.new(0, 200, 0, 50)
-GuiBy.Font = Enum.Font.SourceSansSemibold
-GuiBy.Text = "Gui by Nem&AtKn Sploits™"
-GuiBy.TextColor3 = Color3.fromRGB(255, 255, 255)
-GuiBy.TextSize = 17.000
-
-DesignBy.Name = "DesignBy"
-DesignBy.Parent = Hub_4
-DesignBy.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-DesignBy.BorderColor3 = Color3.fromRGB(0, 0, 0)
-DesignBy.Size = UDim2.new(0, 200, 0, 50)
-DesignBy.Font = Enum.Font.SourceSansSemibold
-DesignBy.Text = "Design by Nemsploits™"
-DesignBy.TextColor3 = Color3.fromRGB(255, 255, 255)
-DesignBy.TextSize = 17.000
-
-ScriptBy.Name = "ScriptBy"
-ScriptBy.Parent = Hub_4
-ScriptBy.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-ScriptBy.BorderColor3 = Color3.fromRGB(0, 0, 0)
-ScriptBy.Size = UDim2.new(0, 200, 0, 50)
-ScriptBy.Font = Enum.Font.SourceSansSemibold
-ScriptBy.Text = "Script by Nem&AtKn Sploits™"
-ScriptBy.TextColor3 = Color3.fromRGB(255, 255, 255)
-ScriptBy.TextSize = 17.000
-
-Rainbow_2.Name = "Rainbow"
-Rainbow_2.Parent = Credits
-Rainbow_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Rainbow_2.BorderSizePixel = 0
-Rainbow_2.Position = UDim2.new(0, 0, 1, 0)
-Rainbow_2.Size = UDim2.new(0, 195, 0, 2)
-
-Name_20.Name = "Name"
-Name_20.Parent = Credits
-Name_20.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Name_20.BackgroundTransparency = 1.000
-Name_20.Position = UDim2.new(0.189225882, 0, 0, 0)
-Name_20.Size = UDim2.new(0, 120, 0, 30)
-Name_20.Font = Enum.Font.SourceSansSemibold
-Name_20.Text = "Credits"
-Name_20.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_20.TextScaled = true
-Name_20.TextSize = 14.000
-Name_20.TextWrapped = true
-
-CloseOpen_2.Name = "Close/Open"
-CloseOpen_2.Parent = Credits
-CloseOpen_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CloseOpen_2.BackgroundTransparency = 1.000
-CloseOpen_2.Position = UDim2.new(0.843177199, 0, 0, 0)
-CloseOpen_2.Size = UDim2.new(0, 30, 0, 30)
-CloseOpen_2.Font = Enum.Font.SourceSans
-CloseOpen_2.Text = "-"
-CloseOpen_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-CloseOpen_2.TextScaled = true
-CloseOpen_2.TextSize = 14.000
-CloseOpen_2.TextWrapped = true
-
-info.Name = "info"
-info.Parent = Credits
-info.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-info.BackgroundTransparency = 1.000
-info.BorderColor3 = Color3.fromRGB(0, 0, 0)
-info.Position = UDim2.new(0.0342598148, 0, 5.2102561, 0)
-info.Size = UDim2.new(0, 180, 0, 45)
-info.Font = Enum.Font.SourceSansSemibold
-info.Text = "[!] Press insert to open and close the gui."
-info.TextColor3 = Color3.fromRGB(255, 255, 255)
-info.TextScaled = true
-info.TextSize = 14.000
-info.TextWrapped = true
-
 -- Scripts:
 
-local function SENQU_fake_script() -- Pages.Toggle 
+local function BNOFT_fake_script() -- Pages.Toggle 
 	local script = Instance.new('LocalScript', Pages)
 
 	function PopupGui()
@@ -639,435 +126,49 @@ local function SENQU_fake_script() -- Pages.Toggle
 	
 	
 	game:GetService("UserInputService").InputBegan:Connect(function(key)
-	if key.KeyCode==Enum.KeyCode.Insert then
+	if key.KeyCode==Enum.KeyCode.RightControl then
 	PopupGui()
 	end
 	end)
 end
-coroutine.wrap(SENQU_fake_script)()
-local function HWHEO_fake_script() -- Button.Script 
-	local script = Instance.new('Script', Button)
+coroutine.wrap(BNOFT_fake_script)()
+local function VMRJHH_fake_script() -- HideName.Script 
+	local script = Instance.new('Script', HideName)
 
 	local button = script.Parent
 	
 	button.MouseButton1Click:Connect(function()
-	local args = {
-	    [1] = "PICKUP_ITEM",
-	    [2] = "Bandage",
-	}
-	
-	game:GetService("ReplicatedStorage").NetworkEvents.RemoteFunction:InvokeServer(unpack(args))
+		game:GetService("Players").LocalPlayer.Character.Head.NameTag:Destroy()
+		while wait() do
+			if game:GetService("Players").LocalPlayer.Character.Humanoid.Health <= 0 then
+				wait(6)
+				game:GetService("Players").LocalPlayer.Character.Head.NameTag:Destroy()
+			end
+		end
 	end)
 end
-coroutine.wrap(HWHEO_fake_script)()
-local function ZMHJ_fake_script() -- CheckBox.Script 
-	local script = Instance.new('Script', CheckBox)
+coroutine.wrap(VMRJHH_fake_script)()
+local function AMED_fake_script() -- MIT.Script 
+	local script = Instance.new('Script', MIT)
 
 	local button = script.Parent
-	local checkbox = script.Parent.Checkbox
-	local checked = script.Parent.Checked
-	_G.on2 = false
 	
 	button.MouseButton1Click:Connect(function()
-	if checked.Visible==true then checked.Visible=false
-	else checked.Visible=true
-	end
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1358, 195, 3335)
 	end)
 end
-coroutine.wrap(ZMHJ_fake_script)()
-local function JFIRRK_fake_script() -- CheckBox.Script 
-	local script = Instance.new('Script', CheckBox)
-
-	local plr = game:GetService('Players').LocalPlayer
-	local Root = plr.Character.HumanoidRootPart
-	local checked = script.Parent.Checked
-	
-	function attack(v)
-	    if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") then
-	local killEvent = game:GetService("Workspace")["__THINGS"]["__REMOTES"].mobdodamage
-	killEvent:FireServer({ { { { v, v.Humanoid.Health } } }, { false } })
-	    end
-	end
-	
-	if checked.Visible == true then
-	_G.on2 = true
-	else
-	_G.on2 = false
-	end
-	
-	
-	if _G.on2 == true then
-	_G.on2 = false
-	else
-	_G.on2 = true
-	while _G.on2 == true do
-	wait()
-	for i,v in pairs(game.Workspace["__THINGS"].Monsters:GetChildren()) do 
-	if v and v:FindFirstChild("HumanoidRootPart") and (Root.Position - v.HumanoidRootPart.Position).Magnitude < 40 then 
-	attack(v)
-	end
-	end
-	end
-	_G.on2 = false
-	end
-end
-coroutine.wrap(JFIRRK_fake_script)()
-local function MKXAHVV_fake_script() -- CheckBox2.Script 
-	local script = Instance.new('Script', CheckBox2)
+coroutine.wrap(AMED_fake_script)()
+local function IVWUTMN_fake_script() -- Spawn.Script 
+	local script = Instance.new('Script', Spawn)
 
 	local button = script.Parent
-	local checkbox = script.Parent.Checkbox
-	local checked = script.Parent.Checked
-	_G.on4 = false
 	
 	button.MouseButton1Click:Connect(function()
-	if checked.Visible==true then checked.Visible=false
-	else checked.Visible=true
-	end
+		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(3892, 295, -689)
 	end)
 end
-coroutine.wrap(MKXAHVV_fake_script)()
-local function TKMMI_fake_script() -- CheckBox2.Script 
-	local script = Instance.new('Script', CheckBox2)
-
-	local plr = game:GetService('Players').LocalPlayer
-	local Root = plr.Character.HumanoidRootPart
-	local checked = script.Parent.Checked
-	
-	function attack(v)
-	    if v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") then
-	local killEvent = game:GetService("Workspace")["__THINGS"]["__REMOTES"].mobdodamage
-	killEvent:FireServer({ { { { v, v.Humanoid.Health } } }, { false } })
-	    end
-	end
-	
-	if checked.Visible == true then
-	_G.on4 = true
-	else
-	_G.on4 = false
-	end
-	
-	if _G.on4 == true then
-	_G.on4 = false
-	else
-	_G.on4 = true
-	while _G.on4 == true do
-	wait()
-	for i,v in pairs(game.Workspace["__THINGS"].Monsters:GetChildren()) do 
-	    if v and v:FindFirstChild("Humanoid") and v:FindFirstChild("HumanoidRootPart") and v.HumanoidRootPart.CFrame.z > -130 then 
-	        attack(v)
-	    end
-	end
-	end
-	_G.on4 = false
-	end
-end
-coroutine.wrap(TKMMI_fake_script)()
-local function OOBTM_fake_script() -- ButtonList.Script 
-	local script = Instance.new('Script', ButtonList)
-
-	_G.Material = "Wood"
-	_G.ITERS = 1
-	local button = script.Parent
-	local hub = button.Hub
-	local label = button["Open/Close"]
-	
-	button.MouseButton1Click:Connect(function()
-	if hub.Visible==true then label.Text="+" hub.Visible=false
-	else hub.Visible=true label.Text="-"
-	end
-	end)
-end
-coroutine.wrap(OOBTM_fake_script)()
-local function PNKV_fake_script() -- Name_3.Script 
-	local script = Instance.new('Script', Name_3)
-
-	local button = script.Parent
-	local hub = script.Parent.Parent
-	local label = script.Parent.Parent.Parent["Open/Close"]
-	local mlabel = script.Parent.Parent.Parent
-	
-	button.MouseButton1Click:Connect(function()
-	_G.Material = "Wood"
-	_G.TIERS = 1
-	hub.Visible = false
-	label.Text = "+"
-	mlabel.Text = "Wood"
-	end)
-end
-coroutine.wrap(PNKV_fake_script)()
-local function JGYVBRB_fake_script() -- Name_4.Script 
-	local script = Instance.new('Script', Name_4)
-
-	local button = script.Parent
-	local hub = script.Parent.Parent
-	local label = script.Parent.Parent.Parent["Open/Close"]
-	local mlabel = script.Parent.Parent.Parent
-	
-	button.MouseButton1Click:Connect(function()
-	_G.Material = "Brick"
-	_G.TIERS = 2
-	hub.Visible = false
-	label.Text = "+"
-	mlabel.Text = "Brick"
-	end)
-end
-coroutine.wrap(JGYVBRB_fake_script)()
-local function WFDSXF_fake_script() -- Name_5.Script 
-	local script = Instance.new('Script', Name_5)
-
-	local button = script.Parent
-	local hub = script.Parent.Parent
-	local label = script.Parent.Parent.Parent["Open/Close"]
-	local mlabel = script.Parent.Parent.Parent
-	
-	button.MouseButton1Click:Connect(function()
-	_G.Material = "Metal"
-	_G.TIERS = 3
-	hub.Visible = false
-	label.Text = "+"
-	mlabel.Text = "Metal"
-	end)
-end
-coroutine.wrap(WFDSXF_fake_script)()
-local function BYPLD_fake_script() -- Name_6.Script 
-	local script = Instance.new('Script', Name_6)
-
-	local button = script.Parent
-	local hub = script.Parent.Parent
-	local label = script.Parent.Parent.Parent["Open/Close"]
-	local mlabel = script.Parent.Parent.Parent
-	
-	button.MouseButton1Click:Connect(function()
-	_G.Material = "Obsidian"
-	_G.TIERS = 4
-	hub.Visible = false
-	label.Text = "+"
-	mlabel.Text = "Obsidian"
-	end)
-end
-coroutine.wrap(BYPLD_fake_script)()
-local function LGWSERL_fake_script() -- Name_7.Script 
-	local script = Instance.new('Script', Name_7)
-
-	local button = script.Parent
-	local hub = script.Parent.Parent
-	local label = script.Parent.Parent.Parent["Open/Close"]
-	local mlabel = script.Parent.Parent.Parent
-	
-	button.MouseButton1Click:Connect(function()
-	_G.Material = "Fİrebrick"
-	_G.TIERS = 5
-	hub.Visible = false
-	label.Text = "+"
-	mlabel.Text = "Firebrick"
-	end)
-end
-coroutine.wrap(LGWSERL_fake_script)()
-local function YAQN_fake_script() -- ButtonList2.Script 
-	local script = Instance.new('Script', ButtonList2)
-
-	_G.Material = "Wood"
-	_G.ITERS = 1
-	local button = script.Parent
-	local hub = button.Hub
-	local label = button["Open/Close"]
-	
-	button.MouseButton1Click:Connect(function()
-	if hub.Visible==true then label.Text="+" hub.Visible=false
-	else hub.Visible=true label.Text="-"
-	end
-	end)
-end
-coroutine.wrap(YAQN_fake_script)()
-local function SXNKEG_fake_script() -- Name_8.Script 
-	local script = Instance.new('Script', Name_8)
-
-	local button = script.Parent
-	local hub = script.Parent.Parent.Parent
-	local label = script.Parent.Parent.Parent.Parent["Open/Close"]
-	local mlabel = script.Parent.Parent.Parent.Parent
-	
-	button.MouseButton1Click:Connect(function()
-	_G.Material = "Obsidian"
-	_G.TIERS = 4
-	hub.Visible = false
-	label.Text = "+"
-	mlabel.Text = "Obsidian"
-	end)
-end
-coroutine.wrap(SXNKEG_fake_script)()
-local function TVKE_fake_script() -- Name_9.Script 
-	local script = Instance.new('Script', Name_9)
-
-	local button = script.Parent
-	local hub = script.Parent.Parent.Parent
-	local label = script.Parent.Parent.Parent.Parent["Open/Close"]
-	local mlabel = script.Parent.Parent.Parent.Parent
-	
-	button.MouseButton1Click:Connect(function()
-	_G.Material = "Obsidian"
-	_G.TIERS = 4
-	hub.Visible = false
-	label.Text = "+"
-	mlabel.Text = "Obsidian"
-	end)
-end
-coroutine.wrap(TVKE_fake_script)()
-local function HEAKUWL_fake_script() -- Name_10.Script 
-	local script = Instance.new('Script', Name_10)
-
-	local button = script.Parent
-	local hub = script.Parent.Parent.Parent
-	local label = script.Parent.Parent.Parent.Parent["Open/Close"]
-	local mlabel = script.Parent.Parent.Parent.Parent
-	
-	button.MouseButton1Click:Connect(function()
-	_G.Material = "Obsidian"
-	_G.TIERS = 4
-	hub.Visible = false
-	label.Text = "+"
-	mlabel.Text = "Obsidian"
-	end)
-end
-coroutine.wrap(HEAKUWL_fake_script)()
-local function EJEP_fake_script() -- Name_11.Script 
-	local script = Instance.new('Script', Name_11)
-
-	local button = script.Parent
-	local hub = script.Parent.Parent.Parent
-	local label = script.Parent.Parent.Parent.Parent["Open/Close"]
-	local mlabel = script.Parent.Parent.Parent.Parent
-	
-	button.MouseButton1Click:Connect(function()
-	_G.Material = "Obsidian"
-	_G.TIERS = 4
-	hub.Visible = false
-	label.Text = "+"
-	mlabel.Text = "Obsidian"
-	end)
-end
-coroutine.wrap(EJEP_fake_script)()
-local function TYARU_fake_script() -- Name_12.Script 
-	local script = Instance.new('Script', Name_12)
-
-	local button = script.Parent
-	local hub = script.Parent.Parent.Parent
-	local label = script.Parent.Parent.Parent.Parent["Open/Close"]
-	local mlabel = script.Parent.Parent.Parent.Parent
-	
-	button.MouseButton1Click:Connect(function()
-	_G.Material = "Obsidian"
-	_G.TIERS = 4
-	hub.Visible = false
-	label.Text = "+"
-	mlabel.Text = "Obsidian"
-	end)
-end
-coroutine.wrap(TYARU_fake_script)()
-local function USZKSZ_fake_script() -- Name_13.Script 
-	local script = Instance.new('Script', Name_13)
-
-	local button = script.Parent
-	local hub = script.Parent.Parent.Parent
-	local label = script.Parent.Parent.Parent.Parent["Open/Close"]
-	local mlabel = script.Parent.Parent.Parent.Parent
-	
-	button.MouseButton1Click:Connect(function()
-	_G.Material = "Obsidian"
-	_G.TIERS = 4
-	hub.Visible = false
-	label.Text = "+"
-	mlabel.Text = "Obsidian"
-	end)
-end
-coroutine.wrap(USZKSZ_fake_script)()
-local function GYLJI_fake_script() -- Name_14.Script 
-	local script = Instance.new('Script', Name_14)
-
-	local button = script.Parent
-	local hub = script.Parent.Parent.Parent
-	local label = script.Parent.Parent.Parent.Parent["Open/Close"]
-	local mlabel = script.Parent.Parent.Parent.Parent
-	
-	button.MouseButton1Click:Connect(function()
-	_G.Material = "Obsidian"
-	_G.TIERS = 4
-	hub.Visible = false
-	label.Text = "+"
-	mlabel.Text = "Obsidian"
-	end)
-end
-coroutine.wrap(GYLJI_fake_script)()
-local function DCQN_fake_script() -- Name_15.Script 
-	local script = Instance.new('Script', Name_15)
-
-	local button = script.Parent
-	local hub = script.Parent.Parent.Parent
-	local label = script.Parent.Parent.Parent.Parent["Open/Close"]
-	local mlabel = script.Parent.Parent.Parent.Parent
-	
-	button.MouseButton1Click:Connect(function()
-	_G.Material = "Obsidian"
-	_G.TIERS = 4
-	hub.Visible = false
-	label.Text = "+"
-	mlabel.Text = "Obsidian"
-	end)
-end
-coroutine.wrap(DCQN_fake_script)()
-local function VJNVB_fake_script() -- Name_16.Script 
-	local script = Instance.new('Script', Name_16)
-
-	local button = script.Parent
-	local hub = script.Parent.Parent.Parent
-	local label = script.Parent.Parent.Parent.Parent["Open/Close"]
-	local mlabel = script.Parent.Parent.Parent.Parent
-	
-	button.MouseButton1Click:Connect(function()
-	_G.Material = "Obsidian"
-	_G.TIERS = 4
-	hub.Visible = false
-	label.Text = "+"
-	mlabel.Text = "Obsidian"
-	end)
-end
-coroutine.wrap(VJNVB_fake_script)()
-local function XVOKZN_fake_script() -- Name_17.Script 
-	local script = Instance.new('Script', Name_17)
-
-	local button = script.Parent
-	local hub = script.Parent.Parent.Parent
-	local label = script.Parent.Parent.Parent.Parent["Open/Close"]
-	local mlabel = script.Parent.Parent.Parent.Parent
-	
-	button.MouseButton1Click:Connect(function()
-	_G.Material = "Obsidian"
-	_G.TIERS = 4
-	hub.Visible = false
-	label.Text = "+"
-	mlabel.Text = "Obsidian"
-	end)
-end
-coroutine.wrap(XVOKZN_fake_script)()
-local function PMEJSX_fake_script() -- Name_18.Script 
-	local script = Instance.new('Script', Name_18)
-
-	local button = script.Parent
-	local hub = script.Parent.Parent.Parent
-	local label = script.Parent.Parent.Parent.Parent["Open/Close"]
-	local mlabel = script.Parent.Parent.Parent.Parent
-	
-	button.MouseButton1Click:Connect(function()
-	_G.Material = "Obsidian"
-	_G.TIERS = 4
-	hub.Visible = false
-	label.Text = "+"
-	mlabel.Text = "Obsidian"
-	end)
-end
-coroutine.wrap(PMEJSX_fake_script)()
-local function VIWXNG_fake_script() -- Rainbow.RainbowFunction 
+coroutine.wrap(IVWUTMN_fake_script)()
+local function NFANNSM_fake_script() -- Rainbow.RainbowFunction 
 	local script = Instance.new('LocalScript', Rainbow)
 
 	while true do 
@@ -1091,8 +192,8 @@ local function VIWXNG_fake_script() -- Rainbow.RainbowFunction
 	end 
 	end
 end
-coroutine.wrap(VIWXNG_fake_script)()
-local function BEMJUCU_fake_script() -- CloseOpen.Script 
+coroutine.wrap(NFANNSM_fake_script)()
+local function ABNOWT_fake_script() -- CloseOpen.Script 
 	local script = Instance.new('Script', CloseOpen)
 
 	local hub = script.Parent.Parent.Hub
@@ -1104,170 +205,53 @@ local function BEMJUCU_fake_script() -- CloseOpen.Script
 	end
 	end)
 end
-coroutine.wrap(BEMJUCU_fake_script)()
-local function LDDZ_fake_script() -- Name.Dragify 
-	local script = Instance.new('LocalScript', Name)
+coroutine.wrap(ABNOWT_fake_script)()
+local function WTQGL_fake_script() -- Main.Make GUI Draggable 
+	local script = Instance.new('LocalScript', Main)
 
-	local UIS = game:GetService("UserInputService")
-	function dragify(Frame)
-	    dragToggle = nil
-	    local dragSpeed = 0.50
-	    dragInput = nil
-	    dragStart = nil
-	    local dragPos = nil
-	    function updateInput(input)
-	        local Delta = input.Position - dragStart
-	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
-	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
-	    end
-	    Frame.InputBegan:Connect(function(input)
-	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
-	            dragToggle = true
-	            dragStart = input.Position
-	            startPos = Frame.Position
-	            input.Changed:Connect(function()
-	                if input.UserInputState == Enum.UserInputState.End then
-	                    dragToggle = false
-	                end
-	            end)
-	        end
-	    end)
-	    Frame.InputChanged:Connect(function(input)
-	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-	            dragInput = input
-	        end
-	    end)
-	    game:GetService("UserInputService").InputChanged:Connect(function(input)
-	        if input == dragInput and dragToggle then
-	            updateInput(input)
-	        end
-	    end)
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
 	end
 	
-	dragify(script.Parent)
-end
-coroutine.wrap(LDDZ_fake_script)()
-local function GJICEDM_fake_script() -- ADiscord.Script 
-	local script = Instance.new('Script', ADiscord)
-
-	local button = script.Parent
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
 	
-	button.MouseButton1Click:Connect(function()
-		loadstring(game:HttpGet("https://pastebinp.com/raw/TwyyG5mJ", true))()
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
 	end)
-end
-coroutine.wrap(GJICEDM_fake_script)()
-local function FTRT_fake_script() -- ADiscord.Message 
-	local script = Instance.new('LocalScript', ADiscord)
-
-	local StarterGui = game:GetService("StarterGui")
-	local button = script.Parent
 	
-	local Notifications = {
-		"Notification Message 1",
-	}
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
 	
-	local TimeBetweenNotifications = 5 --REPLACE 5 WITH THE NUMBER OF SECONDS YOU WANT TO WAIT IN BETWEEN NOTIFICATIONS APPEARING
-	
-	button.MouseButton1Click:Connect(function()
-		for i = 1, #Notifications do
-			local Notification = Notifications[i]
-				
-			StarterGui:SetCore("SendNotification", {
-				Title = "Discord";
-				Text = "Coppied discord to clipboard!";
-				Icon = "rbxassetid://1734216532";
-				Duration = 5;
-			})
-				
-			wait(TimeBetweenNotifications)
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
 		end
 	end)
 end
-coroutine.wrap(FTRT_fake_script)()
-local function TIJG_fake_script() -- Rainbow_2.RainbowFunction 
-	local script = Instance.new('LocalScript', Rainbow_2)
-
-	while true do 
-	i = 0
-	for n=1,0,-0.05 do 
-	i = i + 0.05
-	script.Parent.BackgroundColor3 = Color3.new(i, 0, n)
-	wait() 
-	end
-	i = 0
-	for n=1,0,-0.05 do 
-	i = i + 0.05
-	script.Parent.BackgroundColor3 = Color3.new(n, i, 0)
-	wait()
-	end
-	i = 0
-	for n=1,0,-0.05 do 
-	i = i + 0.05
-	script.Parent.BackgroundColor3 = Color3.new(0, n, i)
-	wait() 
-	end 
-	end
-end
-coroutine.wrap(TIJG_fake_script)()
-local function UGYWM_fake_script() -- CloseOpen_2.Script 
-	local script = Instance.new('Script', CloseOpen_2)
-
-	local hub = script.Parent.Parent.Hub
-	local button = script.Parent
-	local info = script.Parent.Parent.info
-	
-	button.MouseButton1Click:Connect(function()
-	if hub.Visible==true then button.Text="+" hub.Visible=false info.Visible=false
-	else hub.Visible=true button.Text="-" info.Visible=true
-	end
-	end)
-end
-coroutine.wrap(UGYWM_fake_script)()
-local function MZTTDGZ_fake_script() -- Credits.Dragify 
-	local script = Instance.new('LocalScript', Credits)
-
-	local UIS = game:GetService("UserInputService")
-	function dragify(Frame)
-	    dragToggle = nil
-	    local dragSpeed = 0.50
-	    dragInput = nil
-	    dragStart = nil
-	    local dragPos = nil
-	    function updateInput(input)
-	        local Delta = input.Position - dragStart
-	        local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + Delta.X, startPos.Y.Scale, startPos.Y.Offset + Delta.Y)
-	        game:GetService("TweenService"):Create(Frame, TweenInfo.new(0.30), {Position = Position}):Play()
-	    end
-	    Frame.InputBegan:Connect(function(input)
-	        if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) and UIS:GetFocusedTextBox() == nil then
-	            dragToggle = true
-	            dragStart = input.Position
-	            startPos = Frame.Position
-	            input.Changed:Connect(function()
-	                if input.UserInputState == Enum.UserInputState.End then
-	                    dragToggle = false
-	                end
-	            end)
-	        end
-	    end)
-	    Frame.InputChanged:Connect(function(input)
-	        if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-	            dragInput = input
-	        end
-	    end)
-	    game:GetService("UserInputService").InputChanged:Connect(function(input)
-	        if input == dragInput and dragToggle then
-	            updateInput(input)
-	        end
-	    end)
-	end
-	
-	dragify(script.Parent)
-end
-coroutine.wrap(MZTTDGZ_fake_script)()
-local function EBPPDIC_fake_script() -- Thumbnail.Message 
-	local script = Instance.new('LocalScript', Thumbnail)
+coroutine.wrap(WTQGL_fake_script)()
+local function FVPLRB_fake_script() -- BTF.Message 
+	local script = Instance.new('LocalScript', BTF)
 
 	local StarterGui = game:GetService("StarterGui")
 	
@@ -1281,13 +265,12 @@ local function EBPPDIC_fake_script() -- Thumbnail.Message
 		local Notification = Notifications[i]
 			
 		StarterGui:SetCore("SendNotification", {
-			Title = "Thank You!";
-			Text = "Gui made by Nem&AtKn Sploits™";
-			Icon = "rbxassetid://4833960080";
+			Title = "Loaded!";
+			Text = "Press RightCTRL to toggle the gui!";
 			Duration = 7;
 		})
 			
 		wait(TimeBetweenNotifications)
 	end
 end
-coroutine.wrap(EBPPDIC_fake_script)()
+coroutine.wrap(FVPLRB_fake_script)()
