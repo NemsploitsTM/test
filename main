@@ -91,7 +91,7 @@ Wellcome.TextWrapped = true
 
 -- Scripts:
 
-local function DNZWHQ_fake_script() -- TextButton.Rainbower 
+local function RVMJXZX_fake_script() -- TextButton.Rainbower 
 	local script = Instance.new('LocalScript', TextButton)
 
 	while wait() do
@@ -122,8 +122,8 @@ local function DNZWHQ_fake_script() -- TextButton.Rainbower
 		end
 	end
 end
-coroutine.wrap(DNZWHQ_fake_script)()
-local function NXTEJL_fake_script() -- TextButton.Rainbower 
+coroutine.wrap(RVMJXZX_fake_script)()
+local function DOXMCL_fake_script() -- TextButton.Rainbower 
 	local script = Instance.new('LocalScript', TextButton)
 
 	while wait() do
@@ -154,8 +154,8 @@ local function NXTEJL_fake_script() -- TextButton.Rainbower
 		end
 	end
 end
-coroutine.wrap(NXTEJL_fake_script)()
-local function UHEV_fake_script() -- TextButton.Script 
+coroutine.wrap(DOXMCL_fake_script)()
+local function IVODLDT_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	if game.PlaceId == 4913708314 then
@@ -164,6 +164,8 @@ local function UHEV_fake_script() -- TextButton.Script
 		script.Parent.Text = "TAF Turkish Armed Forces"
 	elseif game.PlaceId == 662417684 then
 		script.Parent.Text = "LUCKY BLOCKS Battlegrounds"
+	elseif game.PlaceId == 537413528 then
+		script.Parent.Text = "Build A Boat For Treasure"
 	else
 		script.Parent.Text = "Close"
 		script.Parent.Parent.detected.Text = "No game detected."
@@ -179,21 +181,24 @@ local function UHEV_fake_script() -- TextButton.Script
 		elseif game.PlaceId == 662417684 then
 			loadstring(game:HttpGet('https://raw.githubusercontent.com/NemsploitsTM/test/main/Lucky%20Block', true))()
 			script.Parent.Parent.Parent:Destroy()
+		elseif game.PlaceId == 537413528 then
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/NemsploitsTM/test/main/BABFT', true))()
+			script.Parent.Parent.Parent:Destroy()
 		else
 			script.Parent.Parent.Parent:Destroy()
 		end
 	end)
 end
-coroutine.wrap(UHEV_fake_script)()
-local function RORDA_fake_script() -- Wellcome.LocalScript 
+coroutine.wrap(IVODLDT_fake_script)()
+local function MHTZ_fake_script() -- Wellcome.LocalScript 
 	local script = Instance.new('LocalScript', Wellcome)
 
 	local Player = game:GetService("Players").LocalPlayer.Name
 	
 	script.Parent.Text = "Wellcome "..Player.."!"
 end
-coroutine.wrap(RORDA_fake_script)()
-local function XVJXCC_fake_script() -- Frame.LocalScript 
+coroutine.wrap(MHTZ_fake_script)()
+local function LGUJARV_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local Frame = script.Parent
@@ -311,4 +316,4 @@ local function XVJXCC_fake_script() -- Frame.LocalScript
 	wait(taym)
 	CurrentGame.TextTransparency = 0
 end
-coroutine.wrap(XVJXCC_fake_script)()
+coroutine.wrap(LGUJARV_fake_script)()
