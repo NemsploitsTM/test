@@ -1,9 +1,305 @@
-if game.JobId == 4913708314 then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NemsploitsTM/test/main/BTF"))()
-elseif game.JobId == 6679701700 then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NemsploitsTM/test/main/BTF"))()
-elseif game.JobId == 6679701700 then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NemsploitsTM/test/main/BTF"))()
-elseif game.JobId == 6679701700 then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/NemsploitsTM/test/main/BTF"))()
+local Main = Instance.new("ScreenGui")
+local Frame = Instance.new("ImageLabel")
+local Logo = Instance.new("ImageLabel")
+local detected = Instance.new("TextLabel")
+local a = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local Wellcome = Instance.new("TextLabel")
+
+--Properties:
+
+Main.Name = "Main"
+Main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+
+Frame.Name = "Frame"
+Frame.Parent = Main
+Frame.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.499000013, 0, 0.499000013, 0)
+Frame.Size = UDim2.new(0, 1, 0, 1)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(39, 39, 39)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.080
+
+Logo.Name = "Logo"
+Logo.Parent = Frame
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.Position = UDim2.new(0.401941746, 0, 0.232484072, 0)
+Logo.Size = UDim2.new(0, 1, 0, 1)
+Logo.Visible = false
+Logo.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+detected.Name = "detected"
+detected.Parent = Frame
+detected.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+detected.BackgroundTransparency = 1.000
+detected.Position = UDim2.new(0.306796104, 0, 0.550955355, 0)
+detected.Size = UDim2.new(0, 200, 0, 50)
+detected.Font = Enum.Font.Code
+detected.Text = "Game detected :"
+detected.TextColor3 = Color3.fromRGB(255, 255, 255)
+detected.TextScaled = true
+detected.TextSize = 14.000
+detected.TextTransparency = 1.000
+detected.TextWrapped = true
+
+a.Name = "a"
+a.Parent = Frame
+a.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+a.BackgroundTransparency = 1.000
+a.Position = UDim2.new(0, 0, 0.0764331222, 0)
+a.Size = UDim2.new(0, 515, 0, 50)
+a.Font = Enum.Font.GothamBold
+a.Text = "-------------------------------------------------"
+a.TextColor3 = Color3.fromRGB(255, 255, 255)
+a.TextSize = 30.000
+a.TextTransparency = 1.000
+a.TextWrapped = true
+
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+TextButton.BorderSizePixel = 3
+TextButton.Position = UDim2.new(0.229126215, 0, 0.710191071, 0)
+TextButton.Size = UDim2.new(0, 1, 0, 1)
+TextButton.Visible = false
+TextButton.Font = Enum.Font.GothamSemibold
+TextButton.Text = "Name"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 25.000
+TextButton.TextTransparency = 1.000
+
+Wellcome.Name = "Wellcome"
+Wellcome.Parent = Frame
+Wellcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Wellcome.BackgroundTransparency = 1.000
+Wellcome.Size = UDim2.new(0, 515, 0, 50)
+Wellcome.Font = Enum.Font.GothamBold
+Wellcome.Text = "Wellcome Name!"
+Wellcome.TextColor3 = Color3.fromRGB(255, 255, 255)
+Wellcome.TextSize = 30.000
+Wellcome.TextTransparency = 1.000
+Wellcome.TextWrapped = true
+
+-- Scripts:
+
+local function ASYDUD_fake_script() -- TextButton.Rainbower 
+	local script = Instance.new('LocalScript', TextButton)
+
+	while wait() do
+		script.Parent.TextColor3 = Color3.new(1,0,0)
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g+(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r-(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b+(17/255))
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g-(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r+(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b-(17/255))
+		end
+	end
 end
+coroutine.wrap(ASYDUD_fake_script)()
+local function VMQGMMR_fake_script() -- TextButton.Rainbower 
+	local script = Instance.new('LocalScript', TextButton)
+
+	while wait() do
+		script.Parent.BorderColor3 = Color3.new(1,0,0)
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.BorderColor3 = Color3.new(script.Parent.BorderColor3.r,script.Parent.BorderColor3.g+(17/255),script.Parent.BorderColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.BorderColor3 = Color3.new(script.Parent.BorderColor3.r-(17/255),script.Parent.BorderColor3.g,script.Parent.BorderColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.BorderColor3 = Color3.new(script.Parent.BorderColor3.r,script.Parent.BorderColor3.g,script.Parent.BorderColor3.b+(17/255))
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.BorderColor3 = Color3.new(script.Parent.BorderColor3.r,script.Parent.BorderColor3.g-(17/255),script.Parent.BorderColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.BorderColor3 = Color3.new(script.Parent.BorderColor3.r+(17/255),script.Parent.BorderColor3.g,script.Parent.BorderColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.BorderColor3 = Color3.new(script.Parent.BorderColor3.r,script.Parent.BorderColor3.g,script.Parent.BorderColor3.b-(17/255))
+		end
+	end
+end
+coroutine.wrap(VMQGMMR_fake_script)()
+local function XMWG_fake_script() -- TextButton.Script 
+	local script = Instance.new('Script', TextButton)
+
+	if game.JobId == 4913708314 then
+		script.Parent.Text = "BTF Turkish Armed Forces"
+	elseif game.JobId == 6679701700 then
+		script.Parent.Text = "TAF Turkish Armed Forces"
+	elseif game.JobId == 662417684 then
+		script.Parent.Text = "LUCKY BLOCKS Battlegrounds"
+	else
+		script.Parent.Parent.detected.Text = "No game detected."
+		script.Parent.Text = "Close"
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if game.JobId == 4913708314 then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/NemsploitsTM/test/main/BTF"))()
+		elseif game.JobId == 6679701700 then
+			print("soon")
+		elseif game.JobId == 662417684 then
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/NemsploitsTM/test/main/Lucky%20Block"))()
+		else
+			script.Parent.Parent.Parent:Destroy()
+		end
+	end
+end
+coroutine.wrap(XMWG_fake_script)()
+local function EHRRBP_fake_script() -- Wellcome.LocalScript 
+	local script = Instance.new('LocalScript', Wellcome)
+
+	local Player = game:GetService("Players").LocalPlayer.Name
+	
+	script.Parent.Text = "Wellcome "..Player.."!"
+end
+coroutine.wrap(EHRRBP_fake_script)()
+local function XGPHS_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	local Frame = script.Parent
+	local a = script.Parent.a
+	local Name = script.Parent.Wellcome
+	local CurrentGame = script.Parent.TextButton
+	local detected = script.Parent.detected
+	local logo = script.Parent.Logo
+	local taym = 0.1
+	
+	wait(5)
+	Frame:TweenPosition(
+		UDim2.new(0.3,0,0.305,0),
+		"Out",
+		"Sine",
+		1
+	)
+	wait(1)
+	Frame:TweenSize(
+		UDim2.new(0,515,0,314),
+		"Out",
+		"Sine",
+		1
+	)
+	wait(1)
+	logo.Visible = true
+	logo:TweenSize(
+		UDim2.new(0,100,0,100),
+		"Out",
+		"Sine",
+		1
+	)
+	
+	Name.TextTransparency = 1
+	a.TextTransparency = 1
+	wait(taym)
+	Name.TextTransparency = 0.9
+	a.TextTransparency = 0.9
+	wait(taym)
+	Name.TextTransparency = 0.8
+	a.TextTransparency = 0.8
+	wait(taym)
+	Name.TextTransparency = 0.7
+	a.TextTransparency = 0.7
+	wait(taym)
+	Name.TextTransparency = 0.6
+	a.TextTransparency = 0.6
+	wait(taym)
+	Name.TextTransparency = 0.5
+	a.TextTransparency = 0.5
+	wait(taym)
+	Name.TextTransparency = 0.4
+	a.TextTransparency = 0.4
+	wait(taym)
+	Name.TextTransparency = 0.3
+	a.TextTransparency = 0.3
+	wait(taym)
+	Name.TextTransparency = 0.2
+	a.TextTransparency = 0.2
+	wait(taym)
+	Name.TextTransparency = 0.1
+	a.TextTransparency = 0.1
+	wait(taym)
+	Name.TextTransparency = 0
+	a.TextTransparency = 0
+	
+	detected.TextTransparency = 1
+	wait(taym)
+	detected.TextTransparency = 0.9
+	wait(taym)
+	detected.TextTransparency = 0.8
+	wait(taym)
+	detected.TextTransparency = 0.7
+	wait(taym)
+	detected.TextTransparency = 0.6
+	wait(taym)
+	detected.TextTransparency = 0.5
+	wait(taym)
+	detected.TextTransparency = 0.4
+	wait(taym)
+	detected.TextTransparency = 0.3
+	wait(taym)
+	detected.TextTransparency = 0.2
+	wait(taym)
+	detected.TextTransparency = 0.1
+	wait(taym)
+	detected.TextTransparency = 0
+	
+	CurrentGame.Visible = true
+	CurrentGame:TweenSize(
+		UDim2.new(0,278,0,70),
+		"Out",
+		"Sine",
+		1
+	)
+	wait(1)
+	CurrentGame.TextTransparency = 1
+	wait(taym)
+	CurrentGame.TextTransparency = 0.9
+	wait(taym)
+	CurrentGame.TextTransparency = 0.8
+	wait(taym)
+	CurrentGame.TextTransparency = 0.7
+	wait(taym)
+	CurrentGame.TextTransparency = 0.6
+	wait(taym)
+	CurrentGame.TextTransparency = 0.5
+	wait(taym)
+	CurrentGame.TextTransparency = 0.4
+	wait(taym)
+	CurrentGame.TextTransparency = 0.3
+	wait(taym)
+	CurrentGame.TextTransparency = 0.2
+	wait(taym)
+	CurrentGame.TextTransparency = 0.1
+	wait(taym)
+	CurrentGame.TextTransparency = 0
+end
+coroutine.wrap(XGPHS_fake_script)()
