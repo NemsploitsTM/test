@@ -89,7 +89,7 @@ Wellcome.TextWrapped = true
 
 -- Scripts:
 
-local function KYQA_fake_script() -- TextButton.Rainbower 
+local function GNUSYV_fake_script() -- TextButton.Rainbower 
 	local script = Instance.new('LocalScript', TextButton)
 
 	while wait() do
@@ -120,8 +120,8 @@ local function KYQA_fake_script() -- TextButton.Rainbower
 		end
 	end
 end
-coroutine.wrap(KYQA_fake_script)()
-local function FDKC_fake_script() -- TextButton.Rainbower 
+coroutine.wrap(GNUSYV_fake_script)()
+local function XSAEZ_fake_script() -- TextButton.Rainbower 
 	local script = Instance.new('LocalScript', TextButton)
 
 	while wait() do
@@ -152,14 +152,8 @@ local function FDKC_fake_script() -- TextButton.Rainbower
 		end
 	end
 end
-coroutine.wrap(FDKC_fake_script)()
-local function QVGXJUR_fake_script() -- TextButton.Script 
-	local script = Instance.new('Script', TextButton)
-
-	
-end
-coroutine.wrap(QVGXJUR_fake_script)()
-local function IATBDJY_fake_script() -- TextButton.Script 
+coroutine.wrap(XSAEZ_fake_script)()
+local function XYSXTR_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	if game.JobId == 4913708314 then
@@ -182,16 +176,16 @@ local function IATBDJY_fake_script() -- TextButton.Script
 		end
 	end)
 end
-coroutine.wrap(IATBDJY_fake_script)()
-local function UWYFO_fake_script() -- Wellcome.LocalScript 
+coroutine.wrap(XYSXTR_fake_script)()
+local function ATAIM_fake_script() -- Wellcome.LocalScript 
 	local script = Instance.new('LocalScript', Wellcome)
 
 	local Player = game:GetService("Players").LocalPlayer.Name
 	
 	script.Parent.Text = "Wellcome "..Player.."!"
 end
-coroutine.wrap(UWYFO_fake_script)()
-local function RYRPMH_fake_script() -- Frame.LocalScript 
+coroutine.wrap(ATAIM_fake_script)()
+local function LUZTN_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local Frame = script.Parent
@@ -309,4 +303,4 @@ local function RYRPMH_fake_script() -- Frame.LocalScript
 	wait(taym)
 	CurrentGame.TextTransparency = 0
 end
-coroutine.wrap(RYRPMH_fake_script)()
+coroutine.wrap(LUZTN_fake_script)()
