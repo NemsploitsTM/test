@@ -20,8 +20,8 @@ Frame.Name = "Frame"
 Frame.Parent = Main
 Frame.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
 Frame.BackgroundTransparency = 1.000
-Frame.Position = UDim2.new(0.499000013, 0, 0.499000013, 0)
-Frame.Size = UDim2.new(0, 1, 0, 1)
+Frame.Position = UDim2.new(0.497000009, 0, 0.495000005, 0)
+Frame.Size = UDim2.new(0, 10, 0, 10)
 Frame.Image = "rbxassetid://3570695787"
 Frame.ImageColor3 = Color3.fromRGB(39, 39, 39)
 Frame.ScaleType = Enum.ScaleType.Slice
@@ -89,7 +89,7 @@ Wellcome.TextWrapped = true
 
 -- Scripts:
 
-local function LGEWQ_fake_script() -- TextButton.Rainbower 
+local function EUJIE_fake_script() -- TextButton.Rainbower 
 	local script = Instance.new('LocalScript', TextButton)
 
 	while wait() do
@@ -120,8 +120,8 @@ local function LGEWQ_fake_script() -- TextButton.Rainbower
 		end
 	end
 end
-coroutine.wrap(LGEWQ_fake_script)()
-local function ANSOSR_fake_script() -- TextButton.Rainbower 
+coroutine.wrap(EUJIE_fake_script)()
+local function TFDGQP_fake_script() -- TextButton.Rainbower 
 	local script = Instance.new('LocalScript', TextButton)
 
 	while wait() do
@@ -152,8 +152,8 @@ local function ANSOSR_fake_script() -- TextButton.Rainbower
 		end
 	end
 end
-coroutine.wrap(ANSOSR_fake_script)()
-local function JBKKEYG_fake_script() -- TextButton.Script 
+coroutine.wrap(TFDGQP_fake_script)()
+local function ARCEER_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	if game.PlaceId == 4913708314 then
@@ -170,25 +170,28 @@ local function JBKKEYG_fake_script() -- TextButton.Script
 	script.Parent.MouseButton1Click:Connect(function()
 		if game.PlaceId == 4913708314 then
 			loadstring(game:HttpGet('https://raw.githubusercontent.com/NemsploitsTM/test/main/BTF', true))()
+			script.Parent.Parent.Parent:Destroy()
 		elseif game.PlaceId == 6679701700 then
 			print("soon")
+			script.Parent.Parent.Parent:Destroy()
 		elseif game.PlaceId == 662417684 then
 			loadstring(game:HttpGet('https://raw.githubusercontent.com/NemsploitsTM/test/main/Lucky%20Block', true))()
+			script.Parent.Parent.Parent:Destroy()
 		else
 			script.Parent.Parent.Parent:Destroy()
 		end
 	end)
 end
-coroutine.wrap(JBKKEYG_fake_script)()
-local function BTYXGXR_fake_script() -- Wellcome.LocalScript 
+coroutine.wrap(ARCEER_fake_script)()
+local function TLVATN_fake_script() -- Wellcome.LocalScript 
 	local script = Instance.new('LocalScript', Wellcome)
 
 	local Player = game:GetService("Players").LocalPlayer.Name
 	
 	script.Parent.Text = "Wellcome "..Player.."!"
 end
-coroutine.wrap(BTYXGXR_fake_script)()
-local function QXLU_fake_script() -- Frame.LocalScript 
+coroutine.wrap(TLVATN_fake_script)()
+local function TRMVQH_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local Frame = script.Parent
@@ -200,7 +203,7 @@ local function QXLU_fake_script() -- Frame.LocalScript
 	local taym = 0.1
 	
 	Frame:TweenPosition(
-		UDim2.new(0.3,0,0.305,0),
+		UDim2.new(0.366,0,0.355,0),
 		"Out",
 		"Sine",
 		1
@@ -306,4 +309,4 @@ local function QXLU_fake_script() -- Frame.LocalScript
 	wait(taym)
 	CurrentGame.TextTransparency = 0
 end
-coroutine.wrap(QXLU_fake_script)()
+coroutine.wrap(TRMVQH_fake_script)()
