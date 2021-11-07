@@ -21,6 +21,7 @@ local CloseOpen = Instance.new("TextButton")
 BABFT.Name = "BABFT"
 BABFT.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 BABFT.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+BABFT.ResetOnSpawn = false
 
 Pages.Name = "Pages"
 Pages.Parent = BABFT
@@ -119,7 +120,7 @@ CloseOpen.TextWrapped = true
 
 -- Scripts:
 
-local function JZLADBT_fake_script() -- Pages.Toggle 
+local function TWPO_fake_script() -- Pages.Toggle 
 	local script = Instance.new('LocalScript', Pages)
 
 	function PopupGui()
@@ -130,13 +131,13 @@ local function JZLADBT_fake_script() -- Pages.Toggle
 	
 	
 	game:GetService("UserInputService").InputBegan:Connect(function(key)
-	if key.KeyCode==Enum.KeyCode.Insert then
+	if key.KeyCode==Enum.KeyCode.RightControl then
 	PopupGui()
 	end
 	end)
 end
-coroutine.wrap(JZLADBT_fake_script)()
-local function AXZD_fake_script() -- Water.Script 
+coroutine.wrap(TWPO_fake_script)()
+local function ELBUA_fake_script() -- Water.Script 
 	local script = Instance.new('Script', Water)
 
 	local button = script.Parent
@@ -149,8 +150,8 @@ local function AXZD_fake_script() -- Water.Script
 		end
 	end)
 end
-coroutine.wrap(AXZD_fake_script)()
-local function ESPQ_fake_script() -- Farm.Script 
+coroutine.wrap(ELBUA_fake_script)()
+local function RNLM_fake_script() -- Farm.Script 
 	local script = Instance.new('Script', Farm)
 
 	local button = script.Parent
@@ -185,8 +186,8 @@ local function ESPQ_fake_script() -- Farm.Script
 		end)
 	end)
 end
-coroutine.wrap(ESPQ_fake_script)()
-local function FHZAIAQ_fake_script() -- FarmFast.Script 
+coroutine.wrap(RNLM_fake_script)()
+local function HFUFJPF_fake_script() -- FarmFast.Script 
 	local script = Instance.new('Script', FarmFast)
 
 	local button = script.Parent
@@ -195,8 +196,8 @@ local function FHZAIAQ_fake_script() -- FarmFast.Script
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/urmomjklol69/GoldFarmBabft/main/GoldFarm.lua'),true))()
 	end)
 end
-coroutine.wrap(FHZAIAQ_fake_script)()
-local function CWZBFSH_fake_script() -- Rainbow.RainbowFunction 
+coroutine.wrap(HFUFJPF_fake_script)()
+local function XJKNP_fake_script() -- Rainbow.RainbowFunction 
 	local script = Instance.new('LocalScript', Rainbow)
 
 	while true do 
@@ -220,8 +221,8 @@ local function CWZBFSH_fake_script() -- Rainbow.RainbowFunction
 	end 
 	end
 end
-coroutine.wrap(CWZBFSH_fake_script)()
-local function HRWMXUS_fake_script() -- CloseOpen.Script 
+coroutine.wrap(XJKNP_fake_script)()
+local function FSDS_fake_script() -- CloseOpen.Script 
 	local script = Instance.new('Script', CloseOpen)
 
 	local hub = script.Parent.Parent.Hub
@@ -233,8 +234,8 @@ local function HRWMXUS_fake_script() -- CloseOpen.Script
 	end
 	end)
 end
-coroutine.wrap(HRWMXUS_fake_script)()
-local function AAXYUIK_fake_script() -- Main.Make GUI Draggable 
+coroutine.wrap(FSDS_fake_script)()
+local function IZBPKGA_fake_script() -- Main.Make GUI Draggable 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -277,8 +278,8 @@ local function AAXYUIK_fake_script() -- Main.Make GUI Draggable
 		end
 	end)
 end
-coroutine.wrap(AAXYUIK_fake_script)()
-local function PSATI_fake_script() -- BABFT.Message 
+coroutine.wrap(IZBPKGA_fake_script)()
+local function WBGM_fake_script() -- BABFT.Message 
 	local script = Instance.new('LocalScript', BABFT)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -293,13 +294,12 @@ local function PSATI_fake_script() -- BABFT.Message
 		local Notification = Notifications[i]
 			
 		StarterGui:SetCore("SendNotification", {
-			Title = "Thank You!";
-			Text = "Gui made by Nem&AtKn Sploits™";
-			Icon = "rbxassetid://4833960080";
+			Title = "Loaded!";
+			Text = "Press RightCTRL to toggle the gui!";
 			Duration = 7;
 		})
 			
 		wait(TimeBetweenNotifications)
 	end
 end
-coroutine.wrap(PSATI_fake_script)()
+coroutine.wrap(WBGM_fake_script)()
