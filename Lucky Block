@@ -278,7 +278,7 @@ CloseOpen_2.TextWrapped = true
 
 -- Scripts:
 
-local function AQPD_fake_script() -- Pages.Toggle 
+local function IIASGO_fake_script() -- Pages.Toggle 
 	local script = Instance.new('LocalScript', Pages)
 
 	function PopupGui()
@@ -294,8 +294,8 @@ local function AQPD_fake_script() -- Pages.Toggle
 	end
 	end)
 end
-coroutine.wrap(AQPD_fake_script)()
-local function TSRCV_fake_script() -- aLB.Script 
+coroutine.wrap(IIASGO_fake_script)()
+local function YICMER_fake_script() -- aLB.Script 
 	local script = Instance.new('Script', aLB)
 
 	local button = script.Parent
@@ -304,8 +304,8 @@ local function TSRCV_fake_script() -- aLB.Script
 		game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
 	end)
 end
-coroutine.wrap(TSRCV_fake_script)()
-local function TOJZVQE_fake_script() -- bSLB.Script 
+coroutine.wrap(YICMER_fake_script)()
+local function JOAPPX_fake_script() -- bSLB.Script 
 	local script = Instance.new('Script', bSLB)
 
 	local button = script.Parent
@@ -314,8 +314,8 @@ local function TOJZVQE_fake_script() -- bSLB.Script
 		game:GetService("ReplicatedStorage").SpawnSuperBlock:FireServer()
 	end)
 end
-coroutine.wrap(TOJZVQE_fake_script)()
-local function ZQWJLHU_fake_script() -- cDLB.Script 
+coroutine.wrap(JOAPPX_fake_script)()
+local function GXNNF_fake_script() -- cDLB.Script 
 	local script = Instance.new('Script', cDLB)
 
 	local button = script.Parent
@@ -324,8 +324,8 @@ local function ZQWJLHU_fake_script() -- cDLB.Script
 		game:GetService("ReplicatedStorage").SpawnDiamondBlock:FireServer()
 	end)
 end
-coroutine.wrap(ZQWJLHU_fake_script)()
-local function EALJNU_fake_script() -- dRLB.Script 
+coroutine.wrap(GXNNF_fake_script)()
+local function VELGYPL_fake_script() -- dRLB.Script 
 	local script = Instance.new('Script', dRLB)
 
 	local button = script.Parent
@@ -334,8 +334,8 @@ local function EALJNU_fake_script() -- dRLB.Script
 		game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
 	end)
 end
-coroutine.wrap(EALJNU_fake_script)()
-local function HXATG_fake_script() -- eGLB.Script 
+coroutine.wrap(VELGYPL_fake_script)()
+local function CFZW_fake_script() -- eGLB.Script 
 	local script = Instance.new('Script', eGLB)
 
 	local button = script.Parent
@@ -344,8 +344,8 @@ local function HXATG_fake_script() -- eGLB.Script
 		game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
 	end)
 end
-coroutine.wrap(HXATG_fake_script)()
-local function YJQSND_fake_script() -- fVLB.Script 
+coroutine.wrap(CFZW_fake_script)()
+local function ZADP_fake_script() -- fVLB.Script 
 	local script = Instance.new('Script', fVLB)
 
 	local button = script.Parent
@@ -357,8 +357,8 @@ local function YJQSND_fake_script() -- fVLB.Script
 		end
 	end)
 end
-coroutine.wrap(YJQSND_fake_script)()
-local function WKONZN_fake_script() -- gSGLB.Script 
+coroutine.wrap(ZADP_fake_script)()
+local function PINTZBK_fake_script() -- gSGLB.Script 
 	local script = Instance.new('Script', gSGLB)
 
 	local button = script.Parent
@@ -371,8 +371,8 @@ local function WKONZN_fake_script() -- gSGLB.Script
 		end
 	end)
 end
-coroutine.wrap(WKONZN_fake_script)()
-local function CEDTXR_fake_script() -- Rainbow.RainbowFunction 
+coroutine.wrap(PINTZBK_fake_script)()
+local function WLGAST_fake_script() -- Rainbow.RainbowFunction 
 	local script = Instance.new('LocalScript', Rainbow)
 
 	while true do 
@@ -396,8 +396,8 @@ local function CEDTXR_fake_script() -- Rainbow.RainbowFunction
 	end 
 	end
 end
-coroutine.wrap(CEDTXR_fake_script)()
-local function FSKGXJ_fake_script() -- CloseOpen.Script 
+coroutine.wrap(WLGAST_fake_script)()
+local function OEDBBZ_fake_script() -- CloseOpen.Script 
 	local script = Instance.new('Script', CloseOpen)
 
 	local hub = script.Parent.Parent.Hub
@@ -409,8 +409,8 @@ local function FSKGXJ_fake_script() -- CloseOpen.Script
 	end
 	end)
 end
-coroutine.wrap(FSKGXJ_fake_script)()
-local function HSFSMA_fake_script() -- Main.Make GUI Draggable 
+coroutine.wrap(OEDBBZ_fake_script)()
+local function UOPPIP_fake_script() -- Main.Make GUI Draggable 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -453,8 +453,8 @@ local function HSFSMA_fake_script() -- Main.Make GUI Draggable
 		end
 	end)
 end
-coroutine.wrap(HSFSMA_fake_script)()
-local function JEAV_fake_script() -- GAI.Script 
+coroutine.wrap(UOPPIP_fake_script)()
+local function SWPU_fake_script() -- GAI.Script 
 	local script = Instance.new('Script', GAI)
 
 	local button = script.Parent
@@ -469,8 +469,8 @@ local function JEAV_fake_script() -- GAI.Script
 		end
 	end)
 end
-coroutine.wrap(JEAV_fake_script)()
-local function QMFERX_fake_script() -- RB.Script 
+coroutine.wrap(SWPU_fake_script)()
+local function IDOMYZ_fake_script() -- RB.Script 
 	local script = Instance.new('Script', RB)
 
 	local button = script.Parent
@@ -486,10 +486,27 @@ local function QMFERX_fake_script() -- RB.Script
 			game:GetService("Workspace").Spawn7.Walls.SpawnWalls:Destroy()
 			game:GetService("Workspace").Spawn8.Walls.SpawnWalls:Destroy()
 		end
+		game:GetService("Workspace").Spawn1.Walls.Script:Destroy()
+		game:GetService("Workspace").Spawn2.Walls.Script:Destroy()
+		game:GetService("Workspace").Spawn3.Walls.Script:Destroy()
+		game:GetService("Workspace").Spawn4.Walls.Script:Destroy()
+		game:GetService("Workspace").Spawn5.Walls.Script:Destroy()
+		game:GetService("Workspace").Spawn6.Walls.Script:Destroy()
+		game:GetService("Workspace").Spawn7.Walls.Script:Destroy()
+		game:GetService("Workspace").Spawn8.Walls.Script:Destroy()
+		
+		game:GetService("Workspace").Spawn1.ForceFieldCheck:Destroy()
+		game:GetService("Workspace").Spawn2.ForceFieldCheck:Destroy()
+		game:GetService("Workspace").Spawn3.ForceFieldCheck:Destroy()
+		game:GetService("Workspace").Spawn4.ForceFieldCheck:Destroy()
+		game:GetService("Workspace").Spawn5.ForceFieldCheck:Destroy()
+		game:GetService("Workspace").Spawn6.ForceFieldCheck:Destroy()
+		game:GetService("Workspace").Spawn7.ForceFieldCheck:Destroy()
+		game:GetService("Workspace").Spawn8.ForceFieldCheck:Destroy()
 	end)
 end
-coroutine.wrap(QMFERX_fake_script)()
-local function DPMLU_fake_script() -- TP.Script 
+coroutine.wrap(IDOMYZ_fake_script)()
+local function LJDT_fake_script() -- TP.Script 
 	local script = Instance.new('Script', TP)
 
 	local button = script.Parent
@@ -498,8 +515,8 @@ local function DPMLU_fake_script() -- TP.Script
 		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1042, 194, 90)
 	end)
 end
-coroutine.wrap(DPMLU_fake_script)()
-local function XIIOF_fake_script() -- OA.Script 
+coroutine.wrap(LJDT_fake_script)()
+local function IIQET_fake_script() -- OA.Script 
 	local script = Instance.new('Script', OA)
 
 	local button = script.Parent
@@ -523,8 +540,8 @@ local function XIIOF_fake_script() -- OA.Script
 		end
 	end)
 end
-coroutine.wrap(XIIOF_fake_script)()
-local function LRJIFZH_fake_script() -- Rainbow_2.RainbowFunction 
+coroutine.wrap(IIQET_fake_script)()
+local function KTCL_fake_script() -- Rainbow_2.RainbowFunction 
 	local script = Instance.new('LocalScript', Rainbow_2)
 
 	while true do 
@@ -548,8 +565,8 @@ local function LRJIFZH_fake_script() -- Rainbow_2.RainbowFunction
 	end 
 	end
 end
-coroutine.wrap(LRJIFZH_fake_script)()
-local function RDEVS_fake_script() -- CloseOpen_2.Script 
+coroutine.wrap(KTCL_fake_script)()
+local function JCGB_fake_script() -- CloseOpen_2.Script 
 	local script = Instance.new('Script', CloseOpen_2)
 
 	local hub = script.Parent.Parent.Hub
@@ -561,8 +578,8 @@ local function RDEVS_fake_script() -- CloseOpen_2.Script
 	end
 	end)
 end
-coroutine.wrap(RDEVS_fake_script)()
-local function AOYXBIE_fake_script() -- Other.Make GUI Draggable 
+coroutine.wrap(JCGB_fake_script)()
+local function WHPD_fake_script() -- Other.Make GUI Draggable 
 	local script = Instance.new('LocalScript', Other)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -605,8 +622,8 @@ local function AOYXBIE_fake_script() -- Other.Make GUI Draggable
 		end
 	end)
 end
-coroutine.wrap(AOYXBIE_fake_script)()
-local function ZAJUCG_fake_script() -- LBBG.Message 
+coroutine.wrap(WHPD_fake_script)()
+local function IHNO_fake_script() -- LBBG.Message 
 	local script = Instance.new('LocalScript', LBBG)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -629,4 +646,4 @@ local function ZAJUCG_fake_script() -- LBBG.Message
 		wait(TimeBetweenNotifications)
 	end
 end
-coroutine.wrap(ZAJUCG_fake_script)()
+coroutine.wrap(IHNO_fake_script)()
