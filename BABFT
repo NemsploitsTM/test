@@ -132,7 +132,7 @@ CloseOpen.TextWrapped = true
 
 -- Scripts:
 
-local function WPGOPXQ_fake_script() -- Pages.Toggle 
+local function PGYKL_fake_script() -- Pages.Toggle 
 	local script = Instance.new('LocalScript', Pages)
 
 	function PopupGui()
@@ -148,8 +148,8 @@ local function WPGOPXQ_fake_script() -- Pages.Toggle
 	end
 	end)
 end
-coroutine.wrap(WPGOPXQ_fake_script)()
-local function VEVM_fake_script() -- Water.Script 
+coroutine.wrap(PGYKL_fake_script)()
+local function UFTZLP_fake_script() -- Water.Script 
 	local script = Instance.new('Script', Water)
 
 	local button = script.Parent
@@ -162,8 +162,8 @@ local function VEVM_fake_script() -- Water.Script
 		end
 	end)
 end
-coroutine.wrap(VEVM_fake_script)()
-local function TRXIQ_fake_script() -- Farm.Script 
+coroutine.wrap(UFTZLP_fake_script)()
+local function FYAET_fake_script() -- Farm.Script 
 	local script = Instance.new('Script', Farm)
 
 	local button = script.Parent
@@ -198,8 +198,8 @@ local function TRXIQ_fake_script() -- Farm.Script
 		end)
 	end)
 end
-coroutine.wrap(TRXIQ_fake_script)()
-local function TYXAK_fake_script() -- FarmFast.Script 
+coroutine.wrap(FYAET_fake_script)()
+local function TKJJI_fake_script() -- FarmFast.Script 
 	local script = Instance.new('Script', FarmFast)
 
 	local button = script.Parent
@@ -208,8 +208,8 @@ local function TYXAK_fake_script() -- FarmFast.Script
 		loadstring(game:HttpGet(('https://raw.githubusercontent.com/urmomjklol69/GoldFarmBabft/main/GoldFarm.lua'),true))()
 	end)
 end
-coroutine.wrap(TYXAK_fake_script)()
-local function UZORZTD_fake_script() -- AAFK.Script 
+coroutine.wrap(TKJJI_fake_script)()
+local function LYUXCQ_fake_script() -- AAFK.Script 
 	local script = Instance.new('Script', AAFK)
 
 	local button = script.Parent
@@ -224,8 +224,8 @@ local function UZORZTD_fake_script() -- AAFK.Script
 		end)
 	end)
 end
-coroutine.wrap(UZORZTD_fake_script)()
-local function JDPB_fake_script() -- Rainbow.RainbowFunction 
+coroutine.wrap(LYUXCQ_fake_script)()
+local function KQCUPC_fake_script() -- Rainbow.RainbowFunction 
 	local script = Instance.new('LocalScript', Rainbow)
 
 	while true do 
@@ -249,8 +249,8 @@ local function JDPB_fake_script() -- Rainbow.RainbowFunction
 	end 
 	end
 end
-coroutine.wrap(JDPB_fake_script)()
-local function UVCYVVD_fake_script() -- CloseOpen.Script 
+coroutine.wrap(KQCUPC_fake_script)()
+local function FIRQX_fake_script() -- CloseOpen.Script 
 	local script = Instance.new('Script', CloseOpen)
 
 	local hub = script.Parent.Parent.Hub
@@ -262,8 +262,8 @@ local function UVCYVVD_fake_script() -- CloseOpen.Script
 	end
 	end)
 end
-coroutine.wrap(UVCYVVD_fake_script)()
-local function HZNU_fake_script() -- Main.Make GUI Draggable 
+coroutine.wrap(FIRQX_fake_script)()
+local function JHYRKX_fake_script() -- Main.Make GUI Draggable 
 	local script = Instance.new('LocalScript', Main)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -306,8 +306,8 @@ local function HZNU_fake_script() -- Main.Make GUI Draggable
 		end
 	end)
 end
-coroutine.wrap(HZNU_fake_script)()
-local function DAHSAPU_fake_script() -- BABFT.Message 
+coroutine.wrap(JHYRKX_fake_script)()
+local function PVXEQOL_fake_script() -- BABFT.Message 
 	local script = Instance.new('LocalScript', BABFT)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -330,4 +330,4 @@ local function DAHSAPU_fake_script() -- BABFT.Message
 		wait(TimeBetweenNotifications)
 	end
 end
-coroutine.wrap(DAHSAPU_fake_script)()
+coroutine.wrap(PVXEQOL_fake_script)()
