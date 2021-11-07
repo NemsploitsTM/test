@@ -1,0 +1,305 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local BABFT = Instance.new("ScreenGui")
+local Pages = Instance.new("Frame")
+local Main = Instance.new("Frame")
+local Hub = Instance.new("Frame")
+local UIGridLayout = Instance.new("UIGridLayout")
+local UIPadding = Instance.new("UIPadding")
+local Water = Instance.new("TextButton")
+local Farm = Instance.new("TextButton")
+local FarmFast = Instance.new("TextButton")
+local Rainbow = Instance.new("Frame")
+local Name = Instance.new("TextLabel")
+local CloseOpen = Instance.new("TextButton")
+
+--Properties:
+
+BABFT.Name = "BABFT"
+BABFT.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+BABFT.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Pages.Name = "Pages"
+Pages.Parent = BABFT
+Pages.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Pages.BackgroundTransparency = 1.000
+Pages.Size = UDim2.new(0, 100, 0, 100)
+Pages.ZIndex = 1000000000
+
+Main.Name = "Main"
+Main.Parent = Pages
+Main.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Main.Position = UDim2.new(2.18000007, 0, 0.140000001, 0)
+Main.Size = UDim2.new(0, 195, 0, 30)
+
+Hub.Name = "Hub"
+Hub.Parent = Main
+Hub.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Hub.Position = UDim2.new(0, 0, 1.06666672, 0)
+Hub.Size = UDim2.new(0, 195, 0, 95)
+
+UIGridLayout.Parent = Hub
+UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIGridLayout.CellSize = UDim2.new(0, 180, 0, 25)
+
+UIPadding.Parent = Hub
+UIPadding.PaddingBottom = UDim.new(0, 5)
+UIPadding.PaddingLeft = UDim.new(0, 5)
+UIPadding.PaddingRight = UDim.new(0, 5)
+UIPadding.PaddingTop = UDim.new(0, 5)
+
+Water.Name = "Water"
+Water.Parent = Hub
+Water.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Water.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Water.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+Water.Size = UDim2.new(0, 200, 0, 50)
+Water.Font = Enum.Font.SourceSansSemibold
+Water.Text = "Remove Water"
+Water.TextColor3 = Color3.fromRGB(255, 255, 255)
+Water.TextSize = 17.000
+
+Farm.Name = "Farm"
+Farm.Parent = Hub
+Farm.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Farm.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Farm.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+Farm.Size = UDim2.new(0, 200, 0, 50)
+Farm.Font = Enum.Font.SourceSansSemibold
+Farm.Text = "Auto Farm"
+Farm.TextColor3 = Color3.fromRGB(255, 255, 255)
+Farm.TextSize = 17.000
+
+FarmFast.Name = "FarmFast"
+FarmFast.Parent = Hub
+FarmFast.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+FarmFast.BorderColor3 = Color3.fromRGB(0, 0, 0)
+FarmFast.Position = UDim2.new(-0.00666666683, 0, -0.0411984995, 0)
+FarmFast.Size = UDim2.new(0, 200, 0, 50)
+FarmFast.Font = Enum.Font.SourceSansSemibold
+FarmFast.Text = "Auto Farm (Fast)"
+FarmFast.TextColor3 = Color3.fromRGB(255, 255, 255)
+FarmFast.TextSize = 17.000
+
+Rainbow.Name = "Rainbow"
+Rainbow.Parent = Main
+Rainbow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rainbow.BorderSizePixel = 0
+Rainbow.Position = UDim2.new(0, 0, 1, 0)
+Rainbow.Size = UDim2.new(0, 195, 0, 2)
+
+Name.Name = "Name"
+Name.Parent = Main
+Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Name.BackgroundTransparency = 1.000
+Name.Position = UDim2.new(0.189225882, 0, 0, 0)
+Name.Size = UDim2.new(0, 120, 0, 30)
+Name.Font = Enum.Font.SourceSansSemibold
+Name.Text = "BABFT GUI"
+Name.TextColor3 = Color3.fromRGB(255, 255, 255)
+Name.TextScaled = true
+Name.TextSize = 14.000
+Name.TextWrapped = true
+
+CloseOpen.Name = "Close/Open"
+CloseOpen.Parent = Main
+CloseOpen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpen.BackgroundTransparency = 1.000
+CloseOpen.Position = UDim2.new(0.843177199, 0, 0, 0)
+CloseOpen.Size = UDim2.new(0, 30, 0, 30)
+CloseOpen.Font = Enum.Font.SourceSans
+CloseOpen.Text = "-"
+CloseOpen.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseOpen.TextScaled = true
+CloseOpen.TextSize = 14.000
+CloseOpen.TextWrapped = true
+
+-- Scripts:
+
+local function JZLADBT_fake_script() -- Pages.Toggle 
+	local script = Instance.new('LocalScript', Pages)
+
+	function PopupGui()
+	if script.Parent.Visible==true then script.Parent.Visible=false
+	else script.Parent.Visible=true
+	end
+	end
+	
+	
+	game:GetService("UserInputService").InputBegan:Connect(function(key)
+	if key.KeyCode==Enum.KeyCode.Insert then
+	PopupGui()
+	end
+	end)
+end
+coroutine.wrap(JZLADBT_fake_script)()
+local function AXZD_fake_script() -- Water.Script 
+	local script = Instance.new('Script', Water)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		for i,v in pairs(game.workspace:GetDescendants()) do
+			if v.Name == "PointedRock" or v.Name == "PixelEnemy1" or v.Name == "PixelEnemy2" or v.Name == "PixelEnemy3" or v.Name == "PixelEnemy4" or v.Name == "PixelEnemy5" or v.Name == "PixelEnemy6" or v.Name == "Pizza" or v.Name == "Token" or v.Name == "MaskRock" or v.Name == "Lily1" or v.Name == "Lily2" or v.Name == "Lily3" or v.Name == "Film" or v.Name == "Ticket" or v.Name == "CrystalOre" or v.Name == "RockExplosive" or v.Name == "CaveRoofSpike"  or v.Name == "Toxic Barrel" or v.Name == "Acid" or v.Name == "Toxic Barrel" or v.Name == "Rusted Iron" or v.Name == "Rock" or v.Name == "HoneyRock1" or v.Name == "HoneyRock2" or v.Name == "HoneyStream" or v.Name == "FallRock1" or v.Name == "FallRock2" or v.Name == "GrassyRock" or v.Name == "Pipe" or v.Name == "Pipe1" or v.Name == "UFO1" or v.Name == "CardPurple" or v.Name == "CardYellow" or v.Name == "DiceWhite" or v.Name == "CardGreen" or v.Name == "CardRed" or v.Name == "DiceBlack" or v.Name == "UFO" or v.Name == "UFO2" or v.Name == "UFO3" or v.Name == "Pipe2" or v.Name == "Pipe3" or v.Name == "Mine" or v.Name == "PoisonMushroom" or v.Name == "FireRock" or v.Name == "GrassyRock1" or v.Name == "GrassyRock2" or v.Name == "Loly" or v.Name == "IceCreamCone" or v.Name == "Popsicle" or v.Name == "Tenticle" or v.Name == "BowlingBall" or v.Name == "BowlingBall1" or v.Name == "BowlingBall2" or v.Name == "BowlingBall3" or v.Name == "BowlingBall4" or v.Name == "BowlingBall5" or v.Name == "BowlingBall6" or v.Name == "Gear" or v.Name == "Rock1" or v.Name == "Rock2" or v.Name == "Rock3" or v.Name == "Hotdog" or v.Name == "Pretzel" or v.Name == "CottonCandy" or v.Name == "Water" then
+				v:Destroy()
+			end
+		end
+	end)
+end
+coroutine.wrap(AXZD_fake_script)()
+local function ESPQ_fake_script() -- Farm.Script 
+	local script = Instance.new('Script', Farm)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		local TweenService = game:GetService('TweenService')
+	
+	
+		spawn(function()
+			local debounce = false
+			game:GetService('RunService').RenderStepped:Connect(function()
+				if debounce == true then
+					return
+				end
+				debounce = true
+	
+				local plr = game.Players.LocalPlayer
+				local char = plr.Character
+	
+				char.HumanoidRootPart.CFrame = CFrame.new(-55.7047195, -9.92602158, -274.044922, -0.999055862, 2.2645871e-08, 0.0434471555, 2.07044444e-08, 1, -4.51347049e-08, -0.0434471555, -4.41925856e-08, -0.999055862) + Vector3.new(0, 50, 0)
+				wait(1)
+				TweenService:Create(char.HumanoidRootPart, TweenInfo.new(30), {CFrame = CFrame.new(-62.3435783, 37.1261864, 9309.92871, 0.966365039, -8.40041281e-09, 0.257176876, 2.07044444e-08, 1, -4.51347049e-08, -0.257176876, 4.89412777e-08, 0.966365039)}):Play()
+				wait(29)
+				TweenService:Create(char.HumanoidRootPart, TweenInfo.new(2), {CFrame = CFrame.new(-56.427002, -360.430267, 9483.74902, -0.999547422, 4.76316799e-08, 0.0300814454, 4.78301097e-08, 1, 5.87685989e-09, -0.0300814454, 7.31299954e-09, -0.999547422)}):Play()
+				wait(20)
+				debounce = false
+			end)
+		end)
+	
+		game:GetService('RunService').RenderStepped:Connect(function()
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end)
+	end)
+end
+coroutine.wrap(ESPQ_fake_script)()
+local function FHZAIAQ_fake_script() -- FarmFast.Script 
+	local script = Instance.new('Script', FarmFast)
+
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/urmomjklol69/GoldFarmBabft/main/GoldFarm.lua'),true))()
+	end)
+end
+coroutine.wrap(FHZAIAQ_fake_script)()
+local function CWZBFSH_fake_script() -- Rainbow.RainbowFunction 
+	local script = Instance.new('LocalScript', Rainbow)
+
+	while true do 
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(i, 0, n)
+	wait() 
+	end
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(n, i, 0)
+	wait()
+	end
+	i = 0
+	for n=1,0,-0.05 do 
+	i = i + 0.05
+	script.Parent.BackgroundColor3 = Color3.new(0, n, i)
+	wait() 
+	end 
+	end
+end
+coroutine.wrap(CWZBFSH_fake_script)()
+local function HRWMXUS_fake_script() -- CloseOpen.Script 
+	local script = Instance.new('Script', CloseOpen)
+
+	local hub = script.Parent.Parent.Hub
+	local button = script.Parent
+	
+	button.MouseButton1Click:Connect(function()
+	if hub.Visible==true then button.Text="+" hub.Visible=false
+	else hub.Visible=true button.Text="-"
+	end
+	end)
+end
+coroutine.wrap(HRWMXUS_fake_script)()
+local function AAXYUIK_fake_script() -- Main.Make GUI Draggable 
+	local script = Instance.new('LocalScript', Main)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end
+coroutine.wrap(AAXYUIK_fake_script)()
+local function PSATI_fake_script() -- BABFT.Message 
+	local script = Instance.new('LocalScript', BABFT)
+
+	local StarterGui = game:GetService("StarterGui")
+	
+	local Notifications = {
+		"Notification Message 1",
+	}
+	
+	local TimeBetweenNotifications = 5 --REPLACE 5 WITH THE NUMBER OF SECONDS YOU WANT TO WAIT IN BETWEEN NOTIFICATIONS APPEARING
+	
+	for i = 1, #Notifications do
+		local Notification = Notifications[i]
+			
+		StarterGui:SetCore("SendNotification", {
+			Title = "Thank You!";
+			Text = "Gui made by Nem&AtKn Sploits™";
+			Icon = "rbxassetid://4833960080";
+			Duration = 7;
+		})
+			
+		wait(TimeBetweenNotifications)
+	end
+end
+coroutine.wrap(PSATI_fake_script)()
