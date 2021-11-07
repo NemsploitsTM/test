@@ -3,647 +3,312 @@
 
 -- Instances:
 
-local LBBG = Instance.new("ScreenGui")
-local Pages = Instance.new("Frame")
-local Main = Instance.new("Frame")
-local Hub = Instance.new("Frame")
-local UIGridLayout = Instance.new("UIGridLayout")
-local UIPadding = Instance.new("UIPadding")
-local aLB = Instance.new("TextButton")
-local bSLB = Instance.new("TextButton")
-local cDLB = Instance.new("TextButton")
-local dRLB = Instance.new("TextButton")
-local eGLB = Instance.new("TextButton")
-local fVLB = Instance.new("TextButton")
-local gSGLB = Instance.new("TextButton")
-local Rainbow = Instance.new("Frame")
-local Name = Instance.new("TextLabel")
-local CloseOpen = Instance.new("TextButton")
-local Other = Instance.new("Frame")
-local Hub_2 = Instance.new("Frame")
-local UIGridLayout_2 = Instance.new("UIGridLayout")
-local UIPadding_2 = Instance.new("UIPadding")
-local GAI = Instance.new("TextButton")
-local RB = Instance.new("TextButton")
-local TP = Instance.new("TextButton")
-local OA = Instance.new("TextButton")
-local Rainbow_2 = Instance.new("Frame")
-local Name_2 = Instance.new("TextLabel")
-local CloseOpen_2 = Instance.new("TextButton")
+local Main = Instance.new("ScreenGui")
+local Frame = Instance.new("ImageLabel")
+local Logo = Instance.new("ImageLabel")
+local detected = Instance.new("TextLabel")
+local a = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local Wellcome = Instance.new("TextLabel")
 
 --Properties:
 
-LBBG.Name = "LBBG"
-LBBG.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-LBBG.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-LBBG.ResetOnSpawn = false
-
-Pages.Name = "Pages"
-Pages.Parent = LBBG
-Pages.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Pages.BackgroundTransparency = 1.000
-Pages.Size = UDim2.new(0, 100, 0, 100)
-Pages.ZIndex = 1000000000
-
 Main.Name = "Main"
-Main.Parent = Pages
-Main.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Main.Position = UDim2.new(0.700000167, 0, 0.389999866, 0)
-Main.Size = UDim2.new(0, 195, 0, 30)
+Main.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
-Hub.Name = "Hub"
-Hub.Parent = Main
-Hub.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Hub.Position = UDim2.new(0, 0, 1.0666672, 0)
-Hub.Size = UDim2.new(0, 195, 0, 215)
+Frame.Name = "Frame"
+Frame.Parent = Main
+Frame.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
+Frame.BackgroundTransparency = 1.000
+Frame.Position = UDim2.new(0.497000009, 0, 0.495000005, 0)
+Frame.Size = UDim2.new(0, 10, 0, 10)
+Frame.Image = "rbxassetid://3570695787"
+Frame.ImageColor3 = Color3.fromRGB(39, 39, 39)
+Frame.ScaleType = Enum.ScaleType.Slice
+Frame.SliceCenter = Rect.new(100, 100, 100, 100)
+Frame.SliceScale = 0.080
 
-UIGridLayout.Parent = Hub
-UIGridLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
-UIGridLayout.CellSize = UDim2.new(0, 180, 0, 25)
+Logo.Name = "Logo"
+Logo.Parent = Frame
+Logo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Logo.Position = UDim2.new(0.401941746, 0, 0.232484072, 0)
+Logo.Size = UDim2.new(0, 1, 0, 1)
+Logo.Visible = false
+Logo.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
 
-UIPadding.Parent = Hub
-UIPadding.PaddingBottom = UDim.new(0, 5)
-UIPadding.PaddingLeft = UDim.new(0, 5)
-UIPadding.PaddingRight = UDim.new(0, 5)
-UIPadding.PaddingTop = UDim.new(0, 5)
+detected.Name = "detected"
+detected.Parent = Frame
+detected.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+detected.BackgroundTransparency = 1.000
+detected.Position = UDim2.new(0.306796104, 0, 0.550955355, 0)
+detected.Size = UDim2.new(0, 200, 0, 50)
+detected.Font = Enum.Font.Code
+detected.Text = "Game detected :"
+detected.TextColor3 = Color3.fromRGB(255, 255, 255)
+detected.TextScaled = true
+detected.TextSize = 14.000
+detected.TextTransparency = 1.000
+detected.TextWrapped = true
 
-aLB.Name = "aLB"
-aLB.Parent = Hub
-aLB.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-aLB.BorderColor3 = Color3.fromRGB(0, 0, 0)
-aLB.Position = UDim2.new(-0.550256431, 0, 1.0558728, 0)
-aLB.Size = UDim2.new(0, 200, 0, 50)
-aLB.Font = Enum.Font.SourceSansSemibold
-aLB.Text = "Spawn Lucky Block"
-aLB.TextColor3 = Color3.fromRGB(255, 255, 255)
-aLB.TextSize = 17.000
+a.Name = "a"
+a.Parent = Frame
+a.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+a.BackgroundTransparency = 1.000
+a.Position = UDim2.new(0, 0, 0.0764331222, 0)
+a.Size = UDim2.new(0, 515, 0, 50)
+a.Font = Enum.Font.GothamBold
+a.Text = "-------------------------------------------------"
+a.TextColor3 = Color3.fromRGB(255, 255, 255)
+a.TextSize = 30.000
+a.TextTransparency = 1.000
+a.TextWrapped = true
 
-bSLB.Name = "bSLB"
-bSLB.Parent = Hub
-bSLB.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-bSLB.BorderColor3 = Color3.fromRGB(0, 0, 0)
-bSLB.Position = UDim2.new(-0.550256431, 0, 1.0558728, 0)
-bSLB.Size = UDim2.new(0, 200, 0, 50)
-bSLB.Font = Enum.Font.SourceSansSemibold
-bSLB.Text = "Spawn Super Lucky Block"
-bSLB.TextColor3 = Color3.fromRGB(255, 255, 255)
-bSLB.TextSize = 17.000
+TextButton.Parent = Frame
+TextButton.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+TextButton.BorderSizePixel = 3
+TextButton.Position = UDim2.new(0.229126215, 0, 0.710191071, 0)
+TextButton.Size = UDim2.new(0, 1, 0, 1)
+TextButton.Visible = false
+TextButton.Font = Enum.Font.GothamSemibold
+TextButton.Text = "Name"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
+TextButton.TextSize = 25.000
+TextButton.TextTransparency = 1.000
+TextButton.TextWrapped = true
 
-cDLB.Name = "cDLB"
-cDLB.Parent = Hub
-cDLB.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-cDLB.BorderColor3 = Color3.fromRGB(0, 0, 0)
-cDLB.Position = UDim2.new(-0.550256431, 0, 1.0558728, 0)
-cDLB.Size = UDim2.new(0, 200, 0, 50)
-cDLB.Font = Enum.Font.SourceSansSemibold
-cDLB.Text = "Spawn Diamond Lucy Block"
-cDLB.TextColor3 = Color3.fromRGB(255, 255, 255)
-cDLB.TextSize = 17.000
-
-dRLB.Name = "dRLB"
-dRLB.Parent = Hub
-dRLB.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-dRLB.BorderColor3 = Color3.fromRGB(0, 0, 0)
-dRLB.Position = UDim2.new(-0.550256431, 0, 1.0558728, 0)
-dRLB.Size = UDim2.new(0, 200, 0, 50)
-dRLB.Font = Enum.Font.SourceSansSemibold
-dRLB.Text = "Spawn Rainbow Lucky Block"
-dRLB.TextColor3 = Color3.fromRGB(255, 255, 255)
-dRLB.TextSize = 17.000
-
-eGLB.Name = "eGLB"
-eGLB.Parent = Hub
-eGLB.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-eGLB.BorderColor3 = Color3.fromRGB(0, 0, 0)
-eGLB.Position = UDim2.new(-0.550256431, 0, 1.0558728, 0)
-eGLB.Size = UDim2.new(0, 200, 0, 50)
-eGLB.Font = Enum.Font.SourceSansSemibold
-eGLB.Text = "Spawn Galaxy Lucky Block"
-eGLB.TextColor3 = Color3.fromRGB(255, 255, 255)
-eGLB.TextSize = 17.000
-
-fVLB.Name = "fVLB"
-fVLB.Parent = Hub
-fVLB.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-fVLB.BorderColor3 = Color3.fromRGB(0, 0, 0)
-fVLB.Position = UDim2.new(-0.550256431, 0, 1.0558728, 0)
-fVLB.Size = UDim2.new(0, 200, 0, 50)
-fVLB.Font = Enum.Font.SourceSansSemibold
-fVLB.Text = "Spawn Void Lucky Block"
-fVLB.TextColor3 = Color3.fromRGB(255, 255, 255)
-fVLB.TextSize = 17.000
-
-gSGLB.Name = "gSGLB"
-gSGLB.Parent = Hub
-gSGLB.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-gSGLB.BorderColor3 = Color3.fromRGB(0, 0, 0)
-gSGLB.Position = UDim2.new(-0.550256431, 0, 1.0558728, 0)
-gSGLB.Size = UDim2.new(0, 200, 0, 50)
-gSGLB.Font = Enum.Font.SourceSansSemibold
-gSGLB.Text = "Spawn Squid Game Lucky Block"
-gSGLB.TextColor3 = Color3.fromRGB(255, 255, 255)
-gSGLB.TextSize = 14.000
-
-Rainbow.Name = "Rainbow"
-Rainbow.Parent = Main
-Rainbow.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Rainbow.BorderSizePixel = 0
-Rainbow.Position = UDim2.new(0, 0, 1, 0)
-Rainbow.Size = UDim2.new(0, 195, 0, 2)
-
-Name.Name = "Name"
-Name.Parent = Main
-Name.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Name.BackgroundTransparency = 1.000
-Name.Position = UDim2.new(0.189225882, 0, 0, 0)
-Name.Size = UDim2.new(0, 120, 0, 30)
-Name.Font = Enum.Font.SourceSansSemibold
-Name.Text = "Blocks"
-Name.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name.TextScaled = true
-Name.TextSize = 14.000
-Name.TextWrapped = true
-
-CloseOpen.Name = "Close/Open"
-CloseOpen.Parent = Main
-CloseOpen.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CloseOpen.BackgroundTransparency = 1.000
-CloseOpen.Position = UDim2.new(0.843177199, 0, 0, 0)
-CloseOpen.Size = UDim2.new(0, 30, 0, 30)
-CloseOpen.Font = Enum.Font.SourceSans
-CloseOpen.Text = "-"
-CloseOpen.TextColor3 = Color3.fromRGB(255, 255, 255)
-CloseOpen.TextScaled = true
-CloseOpen.TextSize = 14.000
-CloseOpen.TextWrapped = true
-
-Other.Name = "Other"
-Other.Parent = Pages
-Other.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Other.Position = UDim2.new(2.99000025, 0, 0.389999866, 0)
-Other.Size = UDim2.new(0, 195, 0, 30)
-
-Hub_2.Name = "Hub"
-Hub_2.Parent = Other
-Hub_2.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-Hub_2.Position = UDim2.new(0, 0, 1.0666672, 0)
-Hub_2.Size = UDim2.new(0, 195, 0, 125)
-
-UIGridLayout_2.Parent = Hub_2
-UIGridLayout_2.HorizontalAlignment = Enum.HorizontalAlignment.Center
-UIGridLayout_2.CellSize = UDim2.new(0, 180, 0, 25)
-
-UIPadding_2.Parent = Hub_2
-UIPadding_2.PaddingBottom = UDim.new(0, 5)
-UIPadding_2.PaddingLeft = UDim.new(0, 5)
-UIPadding_2.PaddingRight = UDim.new(0, 5)
-UIPadding_2.PaddingTop = UDim.new(0, 5)
-
-GAI.Name = "GAI"
-GAI.Parent = Hub_2
-GAI.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-GAI.BorderColor3 = Color3.fromRGB(0, 0, 0)
-GAI.Position = UDim2.new(-0.550256431, 0, 1.0558728, 0)
-GAI.Size = UDim2.new(0, 200, 0, 50)
-GAI.Font = Enum.Font.SourceSansSemibold
-GAI.Text = "Get All Items"
-GAI.TextColor3 = Color3.fromRGB(255, 255, 255)
-GAI.TextSize = 17.000
-
-RB.Name = "RB"
-RB.Parent = Hub_2
-RB.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-RB.BorderColor3 = Color3.fromRGB(0, 0, 0)
-RB.Position = UDim2.new(-0.550256431, 0, 1.0558728, 0)
-RB.Size = UDim2.new(0, 200, 0, 50)
-RB.Font = Enum.Font.SourceSansSemibold
-RB.Text = "Remove Base Barriers"
-RB.TextColor3 = Color3.fromRGB(255, 255, 255)
-RB.TextSize = 17.000
-
-TP.Name = "TP"
-TP.Parent = Hub_2
-TP.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-TP.BorderColor3 = Color3.fromRGB(0, 0, 0)
-TP.Position = UDim2.new(-0.550256431, 0, 1.0558728, 0)
-TP.Size = UDim2.new(0, 200, 0, 50)
-TP.Font = Enum.Font.SourceSansSemibold
-TP.Text = "Teleport to Middle"
-TP.TextColor3 = Color3.fromRGB(255, 255, 255)
-TP.TextSize = 17.000
-
-OA.Name = "OA"
-OA.Parent = Hub_2
-OA.BackgroundColor3 = Color3.fromRGB(39, 39, 39)
-OA.BorderColor3 = Color3.fromRGB(0, 0, 0)
-OA.Position = UDim2.new(-0.550256431, 0, 1.0558728, 0)
-OA.Size = UDim2.new(0, 200, 0, 50)
-OA.Font = Enum.Font.SourceSansSemibold
-OA.Text = "Open All Blocks"
-OA.TextColor3 = Color3.fromRGB(255, 255, 255)
-OA.TextSize = 17.000
-
-Rainbow_2.Name = "Rainbow"
-Rainbow_2.Parent = Other
-Rainbow_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Rainbow_2.BorderSizePixel = 0
-Rainbow_2.Position = UDim2.new(0, 0, 1, 0)
-Rainbow_2.Size = UDim2.new(0, 195, 0, 2)
-
-Name_2.Name = "Name"
-Name_2.Parent = Other
-Name_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Name_2.BackgroundTransparency = 1.000
-Name_2.Position = UDim2.new(0.189225882, 0, 0, 0)
-Name_2.Size = UDim2.new(0, 120, 0, 30)
-Name_2.Font = Enum.Font.SourceSansSemibold
-Name_2.Text = "Other"
-Name_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Name_2.TextScaled = true
-Name_2.TextSize = 14.000
-Name_2.TextWrapped = true
-
-CloseOpen_2.Name = "Close/Open"
-CloseOpen_2.Parent = Other
-CloseOpen_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CloseOpen_2.BackgroundTransparency = 1.000
-CloseOpen_2.Position = UDim2.new(0.843177199, 0, 0, 0)
-CloseOpen_2.Size = UDim2.new(0, 30, 0, 30)
-CloseOpen_2.Font = Enum.Font.SourceSans
-CloseOpen_2.Text = "-"
-CloseOpen_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-CloseOpen_2.TextScaled = true
-CloseOpen_2.TextSize = 14.000
-CloseOpen_2.TextWrapped = true
+Wellcome.Name = "Wellcome"
+Wellcome.Parent = Frame
+Wellcome.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Wellcome.BackgroundTransparency = 1.000
+Wellcome.Size = UDim2.new(0, 515, 0, 50)
+Wellcome.Font = Enum.Font.GothamBold
+Wellcome.Text = "Wellcome Name!"
+Wellcome.TextColor3 = Color3.fromRGB(255, 255, 255)
+Wellcome.TextSize = 30.000
+Wellcome.TextTransparency = 1.000
+Wellcome.TextWrapped = true
 
 -- Scripts:
 
-local function IIASGO_fake_script() -- Pages.Toggle 
-	local script = Instance.new('LocalScript', Pages)
+local function DNZWHQ_fake_script() -- TextButton.Rainbower 
+	local script = Instance.new('LocalScript', TextButton)
 
-	function PopupGui()
-	if script.Parent.Visible==true then script.Parent.Visible=false
-	else script.Parent.Visible=true
+	while wait() do
+		script.Parent.TextColor3 = Color3.new(1,0,0)
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g+(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r-(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b+(17/255))
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g-(17/255),script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r+(17/255),script.Parent.TextColor3.g,script.Parent.TextColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.TextColor3 = Color3.new(script.Parent.TextColor3.r,script.Parent.TextColor3.g,script.Parent.TextColor3.b-(17/255))
+		end
 	end
+end
+coroutine.wrap(DNZWHQ_fake_script)()
+local function NXTEJL_fake_script() -- TextButton.Rainbower 
+	local script = Instance.new('LocalScript', TextButton)
+
+	while wait() do
+		script.Parent.BorderColor3 = Color3.new(1,0,0)
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.BorderColor3 = Color3.new(script.Parent.BorderColor3.r,script.Parent.BorderColor3.g+(17/255),script.Parent.BorderColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.BorderColor3 = Color3.new(script.Parent.BorderColor3.r-(17/255),script.Parent.BorderColor3.g,script.Parent.BorderColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.BorderColor3 = Color3.new(script.Parent.BorderColor3.r,script.Parent.BorderColor3.g,script.Parent.BorderColor3.b+(17/255))
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.BorderColor3 = Color3.new(script.Parent.BorderColor3.r,script.Parent.BorderColor3.g-(17/255),script.Parent.BorderColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.BorderColor3 = Color3.new(script.Parent.BorderColor3.r+(17/255),script.Parent.BorderColor3.g,script.Parent.BorderColor3.b)
+		end
+		for i=1,15 do
+			game:GetService("RunService").RenderStepped:wait()
+			script.Parent.BorderColor3 = Color3.new(script.Parent.BorderColor3.r,script.Parent.BorderColor3.g,script.Parent.BorderColor3.b-(17/255))
+		end
+	end
+end
+coroutine.wrap(NXTEJL_fake_script)()
+local function UHEV_fake_script() -- TextButton.Script 
+	local script = Instance.new('Script', TextButton)
+
+	if game.PlaceId == 4913708314 then
+		script.Parent.Text = "BTF Turkish Armed Forces"
+	elseif game.PlaceId == 6679701700 then
+		script.Parent.Text = "TAF Turkish Armed Forces"
+	elseif game.PlaceId == 662417684 then
+		script.Parent.Text = "LUCKY BLOCKS Battlegrounds"
+	else
+		script.Parent.Text = "Close"
+		script.Parent.Parent.detected.Text = "No game detected."
 	end
 	
-	
-	game:GetService("UserInputService").InputBegan:Connect(function(key)
-	if key.KeyCode==Enum.KeyCode.RightControl then
-	PopupGui()
-	end
-	end)
-end
-coroutine.wrap(IIASGO_fake_script)()
-local function YICMER_fake_script() -- aLB.Script 
-	local script = Instance.new('Script', aLB)
-
-	local button = script.Parent
-	
-	button.MouseButton1Click:Connect(function()
-		game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
-	end)
-end
-coroutine.wrap(YICMER_fake_script)()
-local function JOAPPX_fake_script() -- bSLB.Script 
-	local script = Instance.new('Script', bSLB)
-
-	local button = script.Parent
-	
-	button.MouseButton1Click:Connect(function()
-		game:GetService("ReplicatedStorage").SpawnSuperBlock:FireServer()
-	end)
-end
-coroutine.wrap(JOAPPX_fake_script)()
-local function GXNNF_fake_script() -- cDLB.Script 
-	local script = Instance.new('Script', cDLB)
-
-	local button = script.Parent
-	
-	button.MouseButton1Click:Connect(function()
-		game:GetService("ReplicatedStorage").SpawnDiamondBlock:FireServer()
-	end)
-end
-coroutine.wrap(GXNNF_fake_script)()
-local function VELGYPL_fake_script() -- dRLB.Script 
-	local script = Instance.new('Script', dRLB)
-
-	local button = script.Parent
-	
-	button.MouseButton1Click:Connect(function()
-		game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
-	end)
-end
-coroutine.wrap(VELGYPL_fake_script)()
-local function CFZW_fake_script() -- eGLB.Script 
-	local script = Instance.new('Script', eGLB)
-
-	local button = script.Parent
-	
-	button.MouseButton1Click:Connect(function()
-		game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
-	end)
-end
-coroutine.wrap(CFZW_fake_script)()
-local function ZADP_fake_script() -- fVLB.Script 
-	local script = Instance.new('Script', fVLB)
-
-	local button = script.Parent
-	
-	button.MouseButton1Click:Connect(function()
-		for i = 1,10 do
-			game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
-			game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
+	script.Parent.MouseButton1Click:Connect(function()
+		if game.PlaceId == 4913708314 then
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/NemsploitsTM/test/main/BTF', true))()
+			script.Parent.Parent.Parent:Destroy()
+		elseif game.PlaceId == 6679701700 then
+			print("soon")
+			script.Parent.Parent.Parent:Destroy()
+		elseif game.PlaceId == 662417684 then
+			loadstring(game:HttpGet('https://raw.githubusercontent.com/NemsploitsTM/test/main/Lucky%20Block', true))()
+			script.Parent.Parent.Parent:Destroy()
+		else
+			script.Parent.Parent.Parent:Destroy()
 		end
 	end)
 end
-coroutine.wrap(ZADP_fake_script)()
-local function PINTZBK_fake_script() -- gSGLB.Script 
-	local script = Instance.new('Script', gSGLB)
+coroutine.wrap(UHEV_fake_script)()
+local function RORDA_fake_script() -- Wellcome.LocalScript 
+	local script = Instance.new('LocalScript', Wellcome)
 
-	local button = script.Parent
+	local Player = game:GetService("Players").LocalPlayer.Name
 	
-	button.MouseButton1Click:Connect(function()
-		for i = 1,5 do
-			game:GetService("ReplicatedStorage").SpawnDiamondBlock:FireServer()
-			game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
-			game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
-		end
-	end)
+	script.Parent.Text = "Wellcome "..Player.."!"
 end
-coroutine.wrap(PINTZBK_fake_script)()
-local function WLGAST_fake_script() -- Rainbow.RainbowFunction 
-	local script = Instance.new('LocalScript', Rainbow)
+coroutine.wrap(RORDA_fake_script)()
+local function XVJXCC_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
 
-	while true do 
-	i = 0
-	for n=1,0,-0.05 do 
-	i = i + 0.05
-	script.Parent.BackgroundColor3 = Color3.new(i, 0, n)
-	wait() 
-	end
-	i = 0
-	for n=1,0,-0.05 do 
-	i = i + 0.05
-	script.Parent.BackgroundColor3 = Color3.new(n, i, 0)
-	wait()
-	end
-	i = 0
-	for n=1,0,-0.05 do 
-	i = i + 0.05
-	script.Parent.BackgroundColor3 = Color3.new(0, n, i)
-	wait() 
-	end 
-	end
+	local Frame = script.Parent
+	local a = script.Parent.a
+	local Name = script.Parent.Wellcome
+	local CurrentGame = script.Parent.TextButton
+	local detected = script.Parent.detected
+	local logo = script.Parent.Logo
+	local taym = 0.1
+	
+	Frame:TweenPosition(
+		UDim2.new(0.366,0,0.355,0),
+		"Out",
+		"Sine",
+		1
+	)
+	wait(1)
+	Frame:TweenSize(
+		UDim2.new(0,515,0,314),
+		"Out",
+		"Sine",
+		1
+	)
+	wait(1)
+	logo.Visible = true
+	logo:TweenSize(
+		UDim2.new(0,100,0,100),
+		"Out",
+		"Sine",
+		1
+	)
+	
+	Name.TextTransparency = 1
+	a.TextTransparency = 1
+	wait(taym)
+	Name.TextTransparency = 0.9
+	a.TextTransparency = 0.9
+	wait(taym)
+	Name.TextTransparency = 0.8
+	a.TextTransparency = 0.8
+	wait(taym)
+	Name.TextTransparency = 0.7
+	a.TextTransparency = 0.7
+	wait(taym)
+	Name.TextTransparency = 0.6
+	a.TextTransparency = 0.6
+	wait(taym)
+	Name.TextTransparency = 0.5
+	a.TextTransparency = 0.5
+	wait(taym)
+	Name.TextTransparency = 0.4
+	a.TextTransparency = 0.4
+	wait(taym)
+	Name.TextTransparency = 0.3
+	a.TextTransparency = 0.3
+	wait(taym)
+	Name.TextTransparency = 0.2
+	a.TextTransparency = 0.2
+	wait(taym)
+	Name.TextTransparency = 0.1
+	a.TextTransparency = 0.1
+	wait(taym)
+	Name.TextTransparency = 0
+	a.TextTransparency = 0
+	
+	detected.TextTransparency = 1
+	wait(taym)
+	detected.TextTransparency = 0.9
+	wait(taym)
+	detected.TextTransparency = 0.8
+	wait(taym)
+	detected.TextTransparency = 0.7
+	wait(taym)
+	detected.TextTransparency = 0.6
+	wait(taym)
+	detected.TextTransparency = 0.5
+	wait(taym)
+	detected.TextTransparency = 0.4
+	wait(taym)
+	detected.TextTransparency = 0.3
+	wait(taym)
+	detected.TextTransparency = 0.2
+	wait(taym)
+	detected.TextTransparency = 0.1
+	wait(taym)
+	detected.TextTransparency = 0
+	
+	CurrentGame.Visible = true
+	CurrentGame:TweenSize(
+		UDim2.new(0,278,0,70),
+		"Out",
+		"Sine",
+		1
+	)
+	wait(1)
+	CurrentGame.TextTransparency = 1
+	wait(taym)
+	CurrentGame.TextTransparency = 0.9
+	wait(taym)
+	CurrentGame.TextTransparency = 0.8
+	wait(taym)
+	CurrentGame.TextTransparency = 0.7
+	wait(taym)
+	CurrentGame.TextTransparency = 0.6
+	wait(taym)
+	CurrentGame.TextTransparency = 0.5
+	wait(taym)
+	CurrentGame.TextTransparency = 0.4
+	wait(taym)
+	CurrentGame.TextTransparency = 0.3
+	wait(taym)
+	CurrentGame.TextTransparency = 0.2
+	wait(taym)
+	CurrentGame.TextTransparency = 0.1
+	wait(taym)
+	CurrentGame.TextTransparency = 0
 end
-coroutine.wrap(WLGAST_fake_script)()
-local function OEDBBZ_fake_script() -- CloseOpen.Script 
-	local script = Instance.new('Script', CloseOpen)
-
-	local hub = script.Parent.Parent.Hub
-	local button = script.Parent
-	
-	button.MouseButton1Click:Connect(function()
-	if hub.Visible==true then button.Text="+" hub.Visible=false
-	else hub.Visible=true button.Text="-"
-	end
-	end)
-end
-coroutine.wrap(OEDBBZ_fake_script)()
-local function UOPPIP_fake_script() -- Main.Make GUI Draggable 
-	local script = Instance.new('LocalScript', Main)
-
-	local UserInputService = game:GetService("UserInputService")
-	
-	local gui = script.Parent
-	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-	
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-	
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-	
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
-end
-coroutine.wrap(UOPPIP_fake_script)()
-local function SWPU_fake_script() -- GAI.Script 
-	local script = Instance.new('Script', GAI)
-
-	local button = script.Parent
-	
-	button.MouseButton1Click:Connect(function()
-		for i = 1,500 do
-			game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
-			game:GetService("ReplicatedStorage").SpawnSuperBlock:FireServer()
-			game:GetService("ReplicatedStorage").SpawnDiamondBlock:FireServer()
-			game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
-			game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
-		end
-	end)
-end
-coroutine.wrap(SWPU_fake_script)()
-local function IDOMYZ_fake_script() -- RB.Script 
-	local script = Instance.new('Script', RB)
-
-	local button = script.Parent
-	
-	button.MouseButton1Click:Connect(function()
-		for i = 1,5 do
-			game:GetService("Workspace").Spawn1.Walls.SpawnWalls:Destroy()
-			game:GetService("Workspace").Spawn2.Walls.SpawnWalls:Destroy()
-			game:GetService("Workspace").Spawn3.Walls.SpawnWalls:Destroy()
-			game:GetService("Workspace").Spawn4.Walls.SpawnWalls:Destroy()
-			game:GetService("Workspace").Spawn5.Walls.SpawnWalls:Destroy()
-			game:GetService("Workspace").Spawn6.Walls.SpawnWalls:Destroy()
-			game:GetService("Workspace").Spawn7.Walls.SpawnWalls:Destroy()
-			game:GetService("Workspace").Spawn8.Walls.SpawnWalls:Destroy()
-		end
-		game:GetService("Workspace").Spawn1.Walls.Script:Destroy()
-		game:GetService("Workspace").Spawn2.Walls.Script:Destroy()
-		game:GetService("Workspace").Spawn3.Walls.Script:Destroy()
-		game:GetService("Workspace").Spawn4.Walls.Script:Destroy()
-		game:GetService("Workspace").Spawn5.Walls.Script:Destroy()
-		game:GetService("Workspace").Spawn6.Walls.Script:Destroy()
-		game:GetService("Workspace").Spawn7.Walls.Script:Destroy()
-		game:GetService("Workspace").Spawn8.Walls.Script:Destroy()
-		
-		game:GetService("Workspace").Spawn1.ForceFieldCheck:Destroy()
-		game:GetService("Workspace").Spawn2.ForceFieldCheck:Destroy()
-		game:GetService("Workspace").Spawn3.ForceFieldCheck:Destroy()
-		game:GetService("Workspace").Spawn4.ForceFieldCheck:Destroy()
-		game:GetService("Workspace").Spawn5.ForceFieldCheck:Destroy()
-		game:GetService("Workspace").Spawn6.ForceFieldCheck:Destroy()
-		game:GetService("Workspace").Spawn7.ForceFieldCheck:Destroy()
-		game:GetService("Workspace").Spawn8.ForceFieldCheck:Destroy()
-	end)
-end
-coroutine.wrap(IDOMYZ_fake_script)()
-local function LJDT_fake_script() -- TP.Script 
-	local script = Instance.new('Script', TP)
-
-	local button = script.Parent
-	
-	button.MouseButton1Click:Connect(function()
-		game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1042, 194, 90)
-	end)
-end
-coroutine.wrap(LJDT_fake_script)()
-local function IIQET_fake_script() -- OA.Script 
-	local script = Instance.new('Script', OA)
-
-	local button = script.Parent
-	
-	button.MouseButton1Click:Connect(function()
-		game:GetService("ReplicatedStorage").SpawnLuckyBlock:FireServer()
-		game:GetService("ReplicatedStorage").SpawnSuperBlock:FireServer()
-		game:GetService("ReplicatedStorage").SpawnDiamondBlock:FireServer()
-		game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
-		game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
-		
-		for i = 1,10 do
-			game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
-			game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
-		end
-		
-		for i = 1,5 do
-			game:GetService("ReplicatedStorage").SpawnDiamondBlock:FireServer()
-			game:GetService("ReplicatedStorage").SpawnRainbowBlock:FireServer()
-			game:GetService("ReplicatedStorage").SpawnGalaxyBlock:FireServer()
-		end
-	end)
-end
-coroutine.wrap(IIQET_fake_script)()
-local function KTCL_fake_script() -- Rainbow_2.RainbowFunction 
-	local script = Instance.new('LocalScript', Rainbow_2)
-
-	while true do 
-	i = 0
-	for n=1,0,-0.05 do 
-	i = i + 0.05
-	script.Parent.BackgroundColor3 = Color3.new(i, 0, n)
-	wait() 
-	end
-	i = 0
-	for n=1,0,-0.05 do 
-	i = i + 0.05
-	script.Parent.BackgroundColor3 = Color3.new(n, i, 0)
-	wait()
-	end
-	i = 0
-	for n=1,0,-0.05 do 
-	i = i + 0.05
-	script.Parent.BackgroundColor3 = Color3.new(0, n, i)
-	wait() 
-	end 
-	end
-end
-coroutine.wrap(KTCL_fake_script)()
-local function JCGB_fake_script() -- CloseOpen_2.Script 
-	local script = Instance.new('Script', CloseOpen_2)
-
-	local hub = script.Parent.Parent.Hub
-	local button = script.Parent
-	
-	button.MouseButton1Click:Connect(function()
-	if hub.Visible==true then button.Text="+" hub.Visible=false
-	else hub.Visible=true button.Text="-"
-	end
-	end)
-end
-coroutine.wrap(JCGB_fake_script)()
-local function WHPD_fake_script() -- Other.Make GUI Draggable 
-	local script = Instance.new('LocalScript', Other)
-
-	local UserInputService = game:GetService("UserInputService")
-	
-	local gui = script.Parent
-	
-	local dragging
-	local dragInput
-	local dragStart
-	local startPos
-	
-	local function update(input)
-		local delta = input.Position - dragStart
-		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	end
-	
-	gui.InputBegan:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
-			dragging = true
-			dragStart = input.Position
-			startPos = gui.Position
-	
-			input.Changed:Connect(function()
-				if input.UserInputState == Enum.UserInputState.End then
-					dragging = false
-				end
-			end)
-		end
-	end)
-	
-	gui.InputChanged:Connect(function(input)
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-			dragInput = input
-		end
-	end)
-	
-	UserInputService.InputChanged:Connect(function(input)
-		if input == dragInput and dragging then
-			update(input)
-		end
-	end)
-end
-coroutine.wrap(WHPD_fake_script)()
-local function IHNO_fake_script() -- LBBG.Message 
-	local script = Instance.new('LocalScript', LBBG)
-
-	local StarterGui = game:GetService("StarterGui")
-	
-	local Notifications = {
-		"Notification Message 1",
-	}
-	
-	local TimeBetweenNotifications = 5 --REPLACE 5 WITH THE NUMBER OF SECONDS YOU WANT TO WAIT IN BETWEEN NOTIFICATIONS APPEARING
-	
-	for i = 1, #Notifications do
-		local Notification = Notifications[i]
-			
-		StarterGui:SetCore("SendNotification", {
-			Title = "Loaded!";
-			Text = "Press RightCTRL to toggle the gui!";
-			Duration = 7;
-		})
-			
-		wait(TimeBetweenNotifications)
-	end
-end
-coroutine.wrap(IHNO_fake_script)()
+coroutine.wrap(XVJXCC_fake_script)()
