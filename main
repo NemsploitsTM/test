@@ -84,7 +84,7 @@ Wellcome.TextWrapped = true
 
 -- Scripts:
 
-local function ASYDUD_fake_script() -- TextButton.Rainbower 
+local function XFWYE_fake_script() -- TextButton.Rainbower 
 	local script = Instance.new('LocalScript', TextButton)
 
 	while wait() do
@@ -115,8 +115,8 @@ local function ASYDUD_fake_script() -- TextButton.Rainbower
 		end
 	end
 end
-coroutine.wrap(ASYDUD_fake_script)()
-local function VMQGMMR_fake_script() -- TextButton.Rainbower 
+coroutine.wrap(XFWYE_fake_script)()
+local function HSOPL_fake_script() -- TextButton.Rainbower 
 	local script = Instance.new('LocalScript', TextButton)
 
 	while wait() do
@@ -147,8 +147,8 @@ local function VMQGMMR_fake_script() -- TextButton.Rainbower
 		end
 	end
 end
-coroutine.wrap(VMQGMMR_fake_script)()
-local function XMWG_fake_script() -- TextButton.Script 
+coroutine.wrap(HSOPL_fake_script)()
+local function MOSWD_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	if game.JobId == 4913708314 then
@@ -174,16 +174,16 @@ local function XMWG_fake_script() -- TextButton.Script
 		end
 	end
 end
-coroutine.wrap(XMWG_fake_script)()
-local function EHRRBP_fake_script() -- Wellcome.LocalScript 
+coroutine.wrap(MOSWD_fake_script)()
+local function QACOHVV_fake_script() -- Wellcome.LocalScript 
 	local script = Instance.new('LocalScript', Wellcome)
 
 	local Player = game:GetService("Players").LocalPlayer.Name
 	
 	script.Parent.Text = "Wellcome "..Player.."!"
 end
-coroutine.wrap(EHRRBP_fake_script)()
-local function XGPHS_fake_script() -- Frame.LocalScript 
+coroutine.wrap(QACOHVV_fake_script)()
+local function WMOGMFY_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local Frame = script.Parent
@@ -194,7 +194,6 @@ local function XGPHS_fake_script() -- Frame.LocalScript
 	local logo = script.Parent.Logo
 	local taym = 0.1
 	
-	wait(5)
 	Frame:TweenPosition(
 		UDim2.new(0.3,0,0.305,0),
 		"Out",
@@ -302,4 +301,4 @@ local function XGPHS_fake_script() -- Frame.LocalScript
 	wait(taym)
 	CurrentGame.TextTransparency = 0
 end
-coroutine.wrap(XGPHS_fake_script)()
+coroutine.wrap(WMOGMFY_fake_script)()
