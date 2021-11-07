@@ -72,6 +72,7 @@ TextButton.Visible = false
 TextButton.Font = Enum.Font.GothamSemibold
 TextButton.Text = "Name"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextScaled = true
 TextButton.TextSize = 25.000
 TextButton.TextTransparency = 1.000
 TextButton.TextWrapped = true
@@ -90,7 +91,7 @@ Wellcome.TextWrapped = true
 
 -- Scripts:
 
-local function UVVFV_fake_script() -- TextButton.Rainbower 
+local function JPJP_fake_script() -- TextButton.Rainbower 
 	local script = Instance.new('LocalScript', TextButton)
 
 	while wait() do
@@ -121,8 +122,8 @@ local function UVVFV_fake_script() -- TextButton.Rainbower
 		end
 	end
 end
-coroutine.wrap(UVVFV_fake_script)()
-local function JFTCTZJ_fake_script() -- TextButton.Rainbower 
+coroutine.wrap(JPJP_fake_script)()
+local function KLQA_fake_script() -- TextButton.Rainbower 
 	local script = Instance.new('LocalScript', TextButton)
 
 	while wait() do
@@ -153,8 +154,8 @@ local function JFTCTZJ_fake_script() -- TextButton.Rainbower
 		end
 	end
 end
-coroutine.wrap(JFTCTZJ_fake_script)()
-local function CTYLI_fake_script() -- TextButton.Script 
+coroutine.wrap(KLQA_fake_script)()
+local function LALTYB_fake_script() -- TextButton.Script 
 	local script = Instance.new('Script', TextButton)
 
 	if game.PlaceId == 4913708314 then
@@ -183,16 +184,16 @@ local function CTYLI_fake_script() -- TextButton.Script
 		end
 	end)
 end
-coroutine.wrap(CTYLI_fake_script)()
-local function FARSJVP_fake_script() -- Wellcome.LocalScript 
+coroutine.wrap(LALTYB_fake_script)()
+local function IBDEJ_fake_script() -- Wellcome.LocalScript 
 	local script = Instance.new('LocalScript', Wellcome)
 
 	local Player = game:GetService("Players").LocalPlayer.Name
 	
 	script.Parent.Text = "Wellcome "..Player.."!"
 end
-coroutine.wrap(FARSJVP_fake_script)()
-local function VPHGKVB_fake_script() -- Frame.LocalScript 
+coroutine.wrap(IBDEJ_fake_script)()
+local function OSXLCRW_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	local Frame = script.Parent
@@ -310,4 +311,4 @@ local function VPHGKVB_fake_script() -- Frame.LocalScript
 	wait(taym)
 	CurrentGame.TextTransparency = 0
 end
-coroutine.wrap(VPHGKVB_fake_script)()
+coroutine.wrap(OSXLCRW_fake_script)()
