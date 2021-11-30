@@ -54,6 +54,7 @@ local CloseOpen_3 = Instance.new("TextButton")
 TIA.Name = "TIA"
 TIA.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 TIA.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+TIA.ResetOnSpawn = false
 
 Pages.Name = "Pages"
 Pages.Parent = TIA
@@ -452,7 +453,7 @@ CloseOpen_3.TextWrapped = true
 
 -- Scripts:
 
-local function BQDH_fake_script() -- Pages.Toggle 
+local function ZVOI_fake_script() -- Pages.Toggle 
 	local script = Instance.new('LocalScript', Pages)
 
 	function PopupGui()
@@ -468,8 +469,8 @@ local function BQDH_fake_script() -- Pages.Toggle
 	end
 	end)
 end
-coroutine.wrap(BQDH_fake_script)()
-local function INJGDY_fake_script() -- RemoveName.Script 
+coroutine.wrap(ZVOI_fake_script)()
+local function ZHDYG_fake_script() -- RemoveName.Script 
 	local script = Instance.new('Script', RemoveName)
 
 	local button = script.Parent
@@ -478,8 +479,8 @@ local function INJGDY_fake_script() -- RemoveName.Script
 		game:GetService("Players").LocalPlayer.Character.Head.Overhead:Destroy()
 	end)
 end
-coroutine.wrap(INJGDY_fake_script)()
-local function PKZOPX_fake_script() -- CrashServer.Script 
+coroutine.wrap(ZHDYG_fake_script)()
+local function XTSDEK_fake_script() -- CrashServer.Script 
 	local script = Instance.new('Script', CrashServer)
 
 	local button = script.Parent
@@ -494,8 +495,8 @@ local function PKZOPX_fake_script() -- CrashServer.Script
 		end
 	end)
 end
-coroutine.wrap(PKZOPX_fake_script)()
-local function LFJW_fake_script() -- Rainbow.RainbowFunction 
+coroutine.wrap(XTSDEK_fake_script)()
+local function SZNB_fake_script() -- Rainbow.RainbowFunction 
 	local script = Instance.new('LocalScript', Rainbow)
 
 	while true do 
@@ -519,8 +520,8 @@ local function LFJW_fake_script() -- Rainbow.RainbowFunction
 	end 
 	end
 end
-coroutine.wrap(LFJW_fake_script)()
-local function HQLHJ_fake_script() -- CloseOpen.Script 
+coroutine.wrap(SZNB_fake_script)()
+local function EDQFKFP_fake_script() -- CloseOpen.Script 
 	local script = Instance.new('Script', CloseOpen)
 
 	local hub = script.Parent.Parent.Hub
@@ -532,8 +533,8 @@ local function HQLHJ_fake_script() -- CloseOpen.Script
 	end
 	end)
 end
-coroutine.wrap(HQLHJ_fake_script)()
-local function XUWGW_fake_script() -- Misc.Make GUI Draggable 
+coroutine.wrap(EDQFKFP_fake_script)()
+local function VPFC_fake_script() -- Misc.Make GUI Draggable 
 	local script = Instance.new('LocalScript', Misc)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -576,8 +577,8 @@ local function XUWGW_fake_script() -- Misc.Make GUI Draggable
 		end
 	end)
 end
-coroutine.wrap(XUWGW_fake_script)()
-local function RURIK_fake_script() -- KillAll.Script 
+coroutine.wrap(VPFC_fake_script)()
+local function PUCSM_fake_script() -- KillAll.Script 
 	local script = Instance.new('Script', KillAll)
 
 	local button = script.Parent
@@ -589,8 +590,8 @@ local function RURIK_fake_script() -- KillAll.Script
 				kill('hit',players['Name'],'Humanoid','Right Leg')end end
 	end)
 end
-coroutine.wrap(RURIK_fake_script)()
-local function YPSQEH_fake_script() -- LoopKill.Script 
+coroutine.wrap(PUCSM_fake_script)()
+local function ACCZZAH_fake_script() -- LoopKill.Script 
 	local script = Instance.new('Script', LoopKill)
 
 	local button = script.Parent
@@ -616,8 +617,8 @@ local function YPSQEH_fake_script() -- LoopKill.Script
 		end
 	end)
 end
-coroutine.wrap(YPSQEH_fake_script)()
-local function GOBPVND_fake_script() -- PlaySound.Script 
+coroutine.wrap(ACCZZAH_fake_script)()
+local function GOWC_fake_script() -- PlaySound.Script 
 	local script = Instance.new('Script', PlaySound)
 
 	local button = script.Parent
@@ -711,8 +712,8 @@ local function GOBPVND_fake_script() -- PlaySound.Script
 		loadstring(game:HttpGet('https://pastebinp.com/raw/kRW8b2B9', true))()
 	end)
 end
-coroutine.wrap(GOBPVND_fake_script)()
-local function CFXD_fake_script() -- Rainbow_2.RainbowFunction 
+coroutine.wrap(GOWC_fake_script)()
+local function YGJZ_fake_script() -- Rainbow_2.RainbowFunction 
 	local script = Instance.new('LocalScript', Rainbow_2)
 
 	while true do 
@@ -736,8 +737,8 @@ local function CFXD_fake_script() -- Rainbow_2.RainbowFunction
 	end 
 	end
 end
-coroutine.wrap(CFXD_fake_script)()
-local function EKOQZVK_fake_script() -- CloseOpen_2.Script 
+coroutine.wrap(YGJZ_fake_script)()
+local function OULPJA_fake_script() -- CloseOpen_2.Script 
 	local script = Instance.new('Script', CloseOpen_2)
 
 	local hub = script.Parent.Parent.Hub
@@ -749,8 +750,8 @@ local function EKOQZVK_fake_script() -- CloseOpen_2.Script
 	end
 	end)
 end
-coroutine.wrap(EKOQZVK_fake_script)()
-local function GGDGIGG_fake_script() -- OrduSubaylar.Script 
+coroutine.wrap(OULPJA_fake_script)()
+local function RHXD_fake_script() -- OrduSubaylar.Script 
 	local script = Instance.new('Script', OrduSubaylar)
 
 	local button = script.Parent
@@ -759,8 +760,8 @@ local function GGDGIGG_fake_script() -- OrduSubaylar.Script
 		game:GetService("ReplicatedStorage").TeamChanger:FireServer("Ordu Subayları")
 	end)
 end
-coroutine.wrap(GGDGIGG_fake_script)()
-local function MGRL_fake_script() -- Raider.Script 
+coroutine.wrap(RHXD_fake_script)()
+local function OOFY_fake_script() -- Raider.Script 
 	local script = Instance.new('Script', Raider)
 
 	local button = script.Parent
@@ -769,8 +770,8 @@ local function MGRL_fake_script() -- Raider.Script
 		game:GetService("ReplicatedStorage").TeamChanger:FireServer("Raider")
 	end)
 end
-coroutine.wrap(MGRL_fake_script)()
-local function WGSFSX_fake_script() -- OrduGeneralleri.Script 
+coroutine.wrap(OOFY_fake_script)()
+local function XTWDI_fake_script() -- OrduGeneralleri.Script 
 	local script = Instance.new('Script', OrduGeneralleri)
 
 	local button = script.Parent
@@ -779,8 +780,8 @@ local function WGSFSX_fake_script() -- OrduGeneralleri.Script
 		game:GetService("ReplicatedStorage").TeamChanger:FireServer("Ordu Generalleri")
 	end)
 end
-coroutine.wrap(WGSFSX_fake_script)()
-local function MOTFT_fake_script() -- SnrMffettileri.Script 
+coroutine.wrap(XTWDI_fake_script)()
+local function AKMLP_fake_script() -- SnrMffettileri.Script 
 	local script = Instance.new('Script', SnrMffettileri)
 
 	local button = script.Parent
@@ -789,8 +790,8 @@ local function MOTFT_fake_script() -- SnrMffettileri.Script
 		game:GetService("ReplicatedStorage").TeamChanger:FireServer("Sınır Müffettişleri")
 	end)
 end
-coroutine.wrap(MOTFT_fake_script)()
-local function UUSXPUF_fake_script() -- KaraKuvvetlerKomutanl.Script 
+coroutine.wrap(AKMLP_fake_script)()
+local function VWJH_fake_script() -- KaraKuvvetlerKomutanl.Script 
 	local script = Instance.new('Script', KaraKuvvetlerKomutanl)
 
 	local button = script.Parent
@@ -799,8 +800,8 @@ local function UUSXPUF_fake_script() -- KaraKuvvetlerKomutanl.Script
 		game:GetService("ReplicatedStorage").TeamChanger:FireServer("Kara Kuvvetler Komutanlığı")
 	end)
 end
-coroutine.wrap(UUSXPUF_fake_script)()
-local function FDKXZ_fake_script() -- zelKuvvetlerKomutanl.Script 
+coroutine.wrap(VWJH_fake_script)()
+local function ANBZCOT_fake_script() -- zelKuvvetlerKomutanl.Script 
 	local script = Instance.new('Script', zelKuvvetlerKomutanl)
 
 	local button = script.Parent
@@ -809,8 +810,8 @@ local function FDKXZ_fake_script() -- zelKuvvetlerKomutanl.Script
 		game:GetService("ReplicatedStorage").TeamChanger:FireServer("Özel Kuvvetler Komutanlığı")
 	end)
 end
-coroutine.wrap(FDKXZ_fake_script)()
-local function SEWRZQ_fake_script() -- JandarmaGenelKomutanl.Script 
+coroutine.wrap(ANBZCOT_fake_script)()
+local function TQAJEK_fake_script() -- JandarmaGenelKomutanl.Script 
 	local script = Instance.new('Script', JandarmaGenelKomutanl)
 
 	local button = script.Parent
@@ -819,8 +820,8 @@ local function SEWRZQ_fake_script() -- JandarmaGenelKomutanl.Script
 		game:GetService("ReplicatedStorage").TeamChanger:FireServer("Jandarma Genel Komutanlığı")
 	end)
 end
-coroutine.wrap(SEWRZQ_fake_script)()
-local function YFFHXJ_fake_script() -- MIT.Script 
+coroutine.wrap(TQAJEK_fake_script)()
+local function NWXWEN_fake_script() -- MIT.Script 
 	local script = Instance.new('Script', MIT)
 
 	local button = script.Parent
@@ -829,8 +830,8 @@ local function YFFHXJ_fake_script() -- MIT.Script
 		game:GetService("ReplicatedStorage").TeamChanger:FireServer("[Kilitlendi]")
 	end)
 end
-coroutine.wrap(YFFHXJ_fake_script)()
-local function NPGGUIH_fake_script() -- HavaKuvvetleriKomutanl.Script 
+coroutine.wrap(NWXWEN_fake_script)()
+local function GHKWH_fake_script() -- HavaKuvvetleriKomutanl.Script 
 	local script = Instance.new('Script', HavaKuvvetleriKomutanl)
 
 	local button = script.Parent
@@ -839,8 +840,8 @@ local function NPGGUIH_fake_script() -- HavaKuvvetleriKomutanl.Script
 		game:GetService("ReplicatedStorage").TeamChanger:FireServer("Hava Kuvvetleri Komutanlığı")
 	end)
 end
-coroutine.wrap(NPGGUIH_fake_script)()
-local function BHLS_fake_script() -- Askerinzibat.Script 
+coroutine.wrap(GHKWH_fake_script)()
+local function ERCKKEH_fake_script() -- Askerinzibat.Script 
 	local script = Instance.new('Script', Askerinzibat)
 
 	local button = script.Parent
@@ -849,8 +850,8 @@ local function BHLS_fake_script() -- Askerinzibat.Script
 		game:GetService("ReplicatedStorage").TeamChanger:FireServer("Askeri İnzibat")
 	end)
 end
-coroutine.wrap(BHLS_fake_script)()
-local function HOVNESJ_fake_script() -- DenizKuvvetleriKomutanl.Script 
+coroutine.wrap(ERCKKEH_fake_script)()
+local function CYSEKYS_fake_script() -- DenizKuvvetleriKomutanl.Script 
 	local script = Instance.new('Script', DenizKuvvetleriKomutanl)
 
 	local button = script.Parent
@@ -859,8 +860,8 @@ local function HOVNESJ_fake_script() -- DenizKuvvetleriKomutanl.Script
 		game:GetService("ReplicatedStorage").TeamChanger:FireServer("Deniz Kuvvetleri Komutanlığı")
 	end)
 end
-coroutine.wrap(HOVNESJ_fake_script)()
-local function OZWQ_fake_script() -- TrkSilahlKuvvetler.Script 
+coroutine.wrap(CYSEKYS_fake_script)()
+local function GQMZNNP_fake_script() -- TrkSilahlKuvvetler.Script 
 	local script = Instance.new('Script', TrkSilahlKuvvetler)
 
 	local button = script.Parent
@@ -869,8 +870,8 @@ local function OZWQ_fake_script() -- TrkSilahlKuvvetler.Script
 		game:GetService("ReplicatedStorage").TeamChanger:FireServer("Türk Silahlı Kuvvetler")
 	end)
 end
-coroutine.wrap(OZWQ_fake_script)()
-local function XQINUUR_fake_script() -- Sivil.Script 
+coroutine.wrap(GQMZNNP_fake_script)()
+local function MOYY_fake_script() -- Sivil.Script 
 	local script = Instance.new('Script', Sivil)
 
 	local button = script.Parent
@@ -879,8 +880,8 @@ local function XQINUUR_fake_script() -- Sivil.Script
 		game:GetService("ReplicatedStorage").TeamChanger:FireServer("Sivil")
 	end)
 end
-coroutine.wrap(XQINUUR_fake_script)()
-local function TSBO_fake_script() -- Rainbow_3.RainbowFunction 
+coroutine.wrap(MOYY_fake_script)()
+local function IUGZS_fake_script() -- Rainbow_3.RainbowFunction 
 	local script = Instance.new('LocalScript', Rainbow_3)
 
 	while true do 
@@ -904,8 +905,8 @@ local function TSBO_fake_script() -- Rainbow_3.RainbowFunction
 	end 
 	end
 end
-coroutine.wrap(TSBO_fake_script)()
-local function EUMJ_fake_script() -- CloseOpen_3.Script 
+coroutine.wrap(IUGZS_fake_script)()
+local function GAGWRN_fake_script() -- CloseOpen_3.Script 
 	local script = Instance.new('Script', CloseOpen_3)
 
 	local hub = script.Parent.Parent.Hub
@@ -917,8 +918,8 @@ local function EUMJ_fake_script() -- CloseOpen_3.Script
 	end
 	end)
 end
-coroutine.wrap(EUMJ_fake_script)()
-local function LYFWNEO_fake_script() -- Teams.Make GUI Draggable 
+coroutine.wrap(GAGWRN_fake_script)()
+local function DJAWQBV_fake_script() -- Teams.Make GUI Draggable 
 	local script = Instance.new('LocalScript', Teams)
 
 	local UserInputService = game:GetService("UserInputService")
@@ -961,8 +962,8 @@ local function LYFWNEO_fake_script() -- Teams.Make GUI Draggable
 		end
 	end)
 end
-coroutine.wrap(LYFWNEO_fake_script)()
-local function PKHI_fake_script() -- TIA.Message 
+coroutine.wrap(DJAWQBV_fake_script)()
+local function JQIPW_fake_script() -- TIA.Message 
 	local script = Instance.new('LocalScript', TIA)
 
 	local StarterGui = game:GetService("StarterGui")
@@ -986,4 +987,4 @@ local function PKHI_fake_script() -- TIA.Message
 		wait(TimeBetweenNotifications)
 	end
 end
-coroutine.wrap(PKHI_fake_script)()
+coroutine.wrap(JQIPW_fake_script)()
