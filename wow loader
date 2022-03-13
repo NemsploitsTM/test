@@ -1,0 +1,71 @@
+if game.Players.LocalPlayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R15 then
+_G.TorsoFling = true
+_G.ExtremeNetless = true
+_G.Velocity = -50
+_G.R15Selection = true
+else
+_G.TorsoFling = false
+_G.Fling = true
+_G.Velocity = -25.05
+_G.ExtremeNetless = false
+_G.R15Selection = false
+end
+_G.ShowReal = true
+loadstring(game:HttpGet("https://bit.ly/34mO4Uc"))()
+task.wait()
+
+_G.CanFire = nil
+
+local Fling = game.Players.LocalPlayer.Character[game.Players.LocalPlayer.Name]:FindFirstChild("LowerTorso") or game.Players.LocalPlayer.Character[game.Players.LocalPlayer.Name].HumanoidRootPart
+Fling.Transparency = 1
+Fling.BodyAngularVelocity.AngularVelocity = Vector3.new(999999999999999999999999999999999999,999999999999999999999999999999999999,999999999999999999999999999999999999)
+
+local mouse = game.Players.LocalPlayer:GetMouse()
+
+local attackingwithhrp = false
+
+mouse.Button1Down:Connect(function()
+    wait(0.3)
+    if _G.CanFire == true then
+    attackingwithhrp = true    
+    end
+end)
+
+
+mouse.Button1Up:Connect(function()
+    wait(0.3)
+    attackingwithhrp = false
+end)
+
+game["Run Service"].Heartbeat:Connect(function(delta)
+    if attackingwithhrp then
+        if _G.CanFire == true then
+            Fling.CFrame = CFrame.new(mouse.hit.p)
+            wait(0.001)
+            Fling.CFrame = game.Players.LocalPlayer.Character.Torso.CFrame
+        end
+    elseif attackingwithhrp == false then
+        Fling.CFrame = game.Players.LocalPlayer.Character.Torso.CFrame
+    end
+end)
+
+if _G.R15Selection == false then
+    local selectionBox = Instance.new("SelectionBox")
+    selectionBox.Parent = workspace
+    selectionBox.Color3 = Color3.new(1,0,0)
+    selectionBox.Adornee = game.Players.LocalPlayer.Character[game.Players.LocalPlayer.Name].HumanoidRootPart
+elseif _G.R15Selection == true then
+    local selectionBox = Instance.new("SelectionBox")
+    selectionBox.Parent = workspace
+    selectionBox.Color3 = Color3.new(1,0,0)
+    selectionBox.Adornee = game.Players.LocalPlayer.Character[game.Players.LocalPlayer.Name]:FindFirstChild("LowerTorso")
+end
+
+game:GetService("Players").LocalPlayer.Character:WaitForChild("Humanoid").Died:Connect(function()
+game:GetService("Workspace"):WaitForChild("SelectionBox"):Destroy()
+end)
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FocusKerem/LoadLibrary/main/source"))()
+if game:GetService("Players").LocalPlayer.Character:FindFirstChild("RockAccessory") then
+game.Players.LocalPlayer.Character[game.Players.LocalPlayer.Name].RockAccessory.Handle.SpecialMesh:Destroy()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/NemsploitsTM/test/main/ammo%20thingy'),true))()
+end
