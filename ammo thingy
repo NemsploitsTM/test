@@ -1,0 +1,27 @@
+game.Players.LocalPlayer.Character.RockAccessory.Handle.AccessoryWeld:Destroy()
+game.Players.LocalPlayer.Character.RockAccessory.Handle.SpecialMesh:Destroy()
+local function align(i,v)
+local att0 = Instance.new("Attachment", i)
+att0.Position = Vector3.new(0,0,0) 
+local att1 = Instance.new("Attachment", v)
+att1.Position = Vector3.new(0,0,0)-- literally the same thing
+att1.Rotation = Vector3.new(0,0,0)--rotation
+local AP = Instance.new("AlignPosition", i)
+AP.Attachment0 = att0
+AP.Attachment1 = att1
+AP.RigidityEnabled = false
+AP.ReactionForceEnabled = false
+AP.ApplyAtCenterOfMass = true
+AP.MaxForce = 9999999
+AP.MaxVelocity = math.huge
+AP.Responsiveness = 1000000000000
+local AO = Instance.new("AlignOrientation", i)
+AO.Attachment0 = att0
+AO.Attachment1 = att1
+AO.ReactionTorqueEnabled = true
+AO.PrimaryAxisOnly = false
+AO.MaxTorque = 9999999
+AO.MaxAngularVelocity = math.huge
+AO.Responsiveness = 10000000000000
+end
+align(game.Players.LocalPlayer.Character.RockAccessory.Handle, game.Players.LocalPlayer.Character[game.Players.LocalPlayer.Name].HumanoidRootPart)
