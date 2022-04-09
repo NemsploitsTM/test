@@ -25,7 +25,7 @@ AO.MaxAngularVelocity = math.huge
 AO.Responsiveness = 10000000000000
 end
 if _G.R15Selection == false then
-align(game.Players.LocalPlayer.Character.RockAccessory.Handle, game.Players.LocalPlayer.Character[game.Players.LocalPlayer.Name].Torso)
+align(game.Players.LocalPlayer.Character.RockAccessory.Handle, game.Players.LocalPlayer.Character[game.Players.LocalPlayer.Name].HumanoidRootPart)
 elseif _G.R15Selection == true then
 align(game.Players.LocalPlayer.Character.RockAccessory.Handle, game.Players.LocalPlayer.Character[game.Players.LocalPlayer.Name]:FindFirstChild("LowerTorso"))
 end
